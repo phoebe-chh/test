@@ -7,7 +7,7 @@
 2019-09-10 16:47:49,528 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
 2019-09-10 16:47:49,540 - seleniumdriver - INFO - 找到该元素
 2019-09-10 16:47:49,612 - seleniumdriver - INFO - 数据写入成功
-2019-09-10 16:47:49,664 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-10 16:47:49,664 - readconfig - INFO - 操作第4行元2222素,当前测试对象元素路径：submit_btn
 2019-09-10 16:47:49,679 - seleniumdriver - INFO - 找到该元素
 2019-09-10 16:47:49,746 - seleniumdriver - INFO - 元素点击成功
 2019-09-10 16:47:50,814 - element-exist - INFO - 找到该元素
