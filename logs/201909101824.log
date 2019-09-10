@@ -1,0 +1,32 @@
+2019-09-10 18:24:01,044 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-10 18:24:01,044 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-10 18:24:03,623 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-10 18:24:06,030 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-10 18:24:06,044 - seleniumdriver - INFO - 找到该元素
+2019-09-10 18:24:06,094 - seleniumdriver - INFO - 数据写入成功
+2019-09-10 18:24:06,144 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-10 18:24:06,156 - seleniumdriver - INFO - 找到该元素
+2019-09-10 18:24:06,223 - seleniumdriver - INFO - 数据写入成功
+2019-09-10 18:24:06,283 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-10 18:24:06,297 - seleniumdriver - INFO - 找到该元素
+2019-09-10 18:24:06,348 - seleniumdriver - INFO - 元素点击成功
+2019-09-10 18:24:07,470 - element-exist - INFO - 找到该元素
+2019-09-10 18:24:07,496 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-10 18:24:07,504 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="a65aa10721265c342bb6148a486a99a8", element="0.12374818042853852-2")>]
+2019-09-10 18:24:07,568 - readconfig - INFO - 操作第6行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[3]/span[1]
+2019-09-10 18:24:07,582 - seleniumdriver - INFO - 找到该元素
+2019-09-10 18:24:08,220 - seleniumdriver - INFO - 元素点击成功
+2019-09-10 18:24:08,230 - seleniumdriver - INFO - 当前页面标题为：移诉案件列表
+2019-09-10 18:24:08,238 - ys-qlc - INFO - 进入移诉业务成功
+2019-09-10 18:24:08,289 - readconfig - INFO - 操作第9行元素,当前测试对象元素路径：jqButton-btn
+2019-09-10 18:24:08,302 - seleniumdriver - INFO - 找到该元素
+2019-09-10 18:24:08,513 - seleniumdriver - INFO - 元素点击成功
+2019-09-10 18:24:08,544 - ys-qlc - INFO - 开始选择案件和嫌疑人
+2019-09-10 18:24:08,577 - choosesupects - INFO - 当前页案件数量为5
+2019-09-10 18:24:08,578 - choosesupects - INFO - 正在查找第1条案件
+2019-09-10 18:24:08,596 - choosesupects - INFO - 当前的案件列表数量为5
+2019-09-10 18:24:08,612 - choosesupects - INFO - 双击案件列表，寻找有嫌疑人的案件
+2019-09-10 18:24:10,732 - choosesupects - INFO - 正在查找的当前案件的嫌疑人数量为0
+2019-09-10 18:24:10,735 - choosesupects - INFO - 正在查找第2条案件
+2019-09-10 18:24:10,759 - choosesupects - INFO - 当前的案件列表数量为5
+2019-09-10 18:24:10,782 - choosesupects - INFO - 双击案件列表，寻找有嫌疑人的案件

@@ -1,0 +1,25 @@
+2019-09-10 15:12:19,918 - repleace-file - INFO - 找到record.txt文件中记录的节点名称
+2019-09-10 15:12:19,919 - repleace-file - INFO - 找到record.txt文件中需要替换的节点内容
+2019-09-10 15:12:19,919 - repleace-file - INFO - 找到record.txt文件中记录的节点名称
+2019-09-10 15:12:19,919 - repleace-file - INFO - 需要替换的节点为['存入ajid', '案件名称', '平台案件编号', '平台案件关联编号', '接收单位编号', '发送单位编号']
+2019-09-10 15:12:19,919 - repleace-file - INFO - 找到record.txt文件中需要替换的节点内容
+2019-09-10 15:12:19,919 - repleace-file - INFO - 需要替换成['A0880E74F9024DA769DF471CAC10A35D', '枫绿安涉嫌盗窃、抢夺武装部队公文、证件、印章案', 'A0880E74F9024DA769DF471CAC10A35D', 'd6db7a8407cf4657b8b104a94b6d1f39', '3320584', '2320584']
+2019-09-10 15:12:19,919 - repleace-file - INFO - 找到ajxx.xml的路径
+2019-09-10 15:12:19,920 - read-config - INFO - D:\PycharmProjects\autotest/config/config.ini
+2019-09-10 15:12:19,923 - repleace-file - INFO - 开始替换内容
+2019-09-10 15:12:19,924 - repleace-file - INFO - 文件内容替换结束
+2019-09-10 15:12:19,924 - read-config - INFO - D:\PycharmProjects\autotest/config/config.ini
+2019-09-10 15:12:19,924 - zipallfile - INFO - F:\file\204.zip
+2019-09-10 15:12:19,929 - zipallfile - INFO - 文件压缩成功
+2019-09-10 15:12:19,929 - read-config - INFO - D:\PycharmProjects\autotest/config/config.ini
+2019-09-10 15:12:19,929 - encryption - INFO - 压缩包存在，开始加密
+2019-09-10 15:12:20,054 - encryption - INFO - 压缩包名称204.zip
+2019-09-10 15:12:20,054 - encryption - INFO - 压缩包路径F:\file
+2019-09-10 15:12:20,537 - encryption - INFO - 加密成功
+2019-09-10 15:12:20,537 - encryption - INFO - 加密后文件存放路径：F:\file\./after_jiami
+2019-09-10 15:12:20,539 - read-config - INFO - D:\PycharmProjects\autotest/config/config.ini
+2019-09-10 15:12:20,539 - read-config - INFO - D:\PycharmProjects\autotest/config/config.ini
+2019-09-10 15:12:20,539 - putonserver - INFO - 本地文件路径F:\file\204.zip
+2019-09-10 15:12:20,539 - putonserver - INFO - ftp服务器路径/home/ftp/jcy/204.zip
+2019-09-10 15:12:20,668 - putonserver - INFO - 连接服务器172.23.23.220成功，开始上传压缩包
+2019-09-10 15:12:20,712 - putonserver - INFO - 上传到服务器成功
