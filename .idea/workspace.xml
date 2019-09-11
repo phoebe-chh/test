@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="" />
+    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101647.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101649.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101700.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101702.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101706.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101719.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101747.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101748.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101750.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101759.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101803.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101805.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101806.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101811.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101812.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101817.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101818.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101819.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101823.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101824.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101851.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101852.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101853.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101854.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101855.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101856.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101858.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101859.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909101900.log" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +91,16 @@
       <find>switch_window</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1QMjo5aofMO5hwLBJ7oY1rleVey" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../seleniumprac" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -250,7 +286,30 @@
       <workItem from="1567655839089" duration="8153000" />
       <workItem from="1567667821123" duration="55891000" />
       <workItem from="1568108744735" duration="2784000" />
+      <workItem from="1568118553753" duration="5919000" />
     </task>
+    <task id="LOCAL-00001" summary="deltet">
+      <created>1568118921747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568118921747</updated>
+    </task>
+    <task id="LOCAL-00002" summary="22222222">
+      <created>1568119151394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568119151394</updated>
+    </task>
+    <task id="LOCAL-00003" summary="22222222">
+      <created>1568119250603</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568119250603</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -264,6 +323,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="deltet" />
+    <MESSAGE value="22222222" />
+    <option name="LAST_COMMIT_MESSAGE" value="22222222" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autotest$post.coverage" NAME="post Coverage Results" MODIFIED="1568091407842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
