@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101647.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101649.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101700.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101702.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101706.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101719.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101747.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101748.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101750.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101759.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101803.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101805.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101806.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101811.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101812.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101817.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101818.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101819.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101823.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101824.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101851.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101852.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101853.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101854.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101855.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101856.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101858.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101859.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/201909101900.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +71,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../seleniumprac" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -286,7 +257,7 @@
       <workItem from="1567655839089" duration="8153000" />
       <workItem from="1567667821123" duration="55891000" />
       <workItem from="1568108744735" duration="2784000" />
-      <workItem from="1568118553753" duration="5919000" />
+      <workItem from="1568118553753" duration="12248000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>

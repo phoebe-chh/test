@@ -17,10 +17,10 @@ class SeleniumDriver:
         基类，封装元素操作
     """
 
-    def __init__(self,driver):
-        self.driver=driver
+    def __init__(self, driver):
+        self.driver = driver
 
-    def getByType(self,locatorType):
+    def getByType(self, locatorType):
         locatorType = locatorType.lower()
         if locatorType == "id":
             return By.ID
@@ -38,12 +38,12 @@ class SeleniumDriver:
             logger.info("元素类型不存在")
         return False
 
-    def getElement(self,locator,locatorType="id"):
-        element=None
+    def getElement(self, locator, locatorType="id"):
+        element = None
         try:
             locatorType = locatorType.lower()
             byType = self.getByType(locatorType)
-            element = self.driver.find_element(byType,locator)
+            element = self.driver.find_element(byType, locator)
             logger.info("找到该元素")
         except NoSuchElementException as e:
             logger.error("元素未找到，抛出异常{}".format(e))
@@ -51,27 +51,27 @@ class SeleniumDriver:
 
         return element
 
-    def click(self,locator,locatorType="id"):
+    def click(self, locator, locatorType="id"):
         try:
-            element = self.getElement(locator,locatorType)
+            element = self.getElement(locator, locatorType)
             element.click()
             logger.info("元素点击成功")
         except Exception as e:
             logger.error("元素点击失败,异常信息:{}".format(e))
             # print_stack()
 
-    def text_input(self,data,locator,locatorType="id"):
+    def text_input(self, data, locator, locatorType="id"):
         try:
-            element = self.getElement(locator,locatorType)
+            element = self.getElement(locator, locatorType)
             element.send_keys(data)
             logger.info("数据写入成功")
         except Exception as e:
             logger.info("数据写入失败,抛出异常: {}".format(e))
             self.get_window_img()
 
-    def double_click(self,locator,locatorType= 'id'):
+    def double_click(self, locator, locatorType='id'):
         try:
-            ge = self.getElement(locator,locatorType)
+            ge = self.getElement(locator, locatorType)
             ActionChains(self.driver).double_click(ge).perform()
             logger.info("元素双击成功")
         except Exception as e:
@@ -100,10 +100,10 @@ class SeleniumDriver:
             self.get_window_img()
 
     # 执行js脚本
-    def excute_js(self,script,locator,locatorType="id"):
+    def excute_js(self, script, locator, locatorType="id"):
         try:
-            target=self.getElement(locator,locatorType)
-            self.driver.execute_script(script,target)
+            target = self.getElement(locator, locatorType)
+            self.driver.execute_script(script, target)
         except Exception as e:
             logger.info("js执行失败抛出异常{}".format(e))
 
@@ -118,27 +118,22 @@ class SeleniumDriver:
         return self.driver.title
 
     # 切换iframe，传入参数为下标
-    def switch_iframe(self,number):
+    def switch_iframe(self, number):
         frams = self.driver.find_elements_by_tag_name("iframe")
         logger.info("当前页面的ifram个数为{}".format(len(frams)))
         logger.info("当前页面iframe有{}".format(frams))
-        framnum=frams[number]
+        framnum = frams[number]
         self.driver.switch_to.frame(framnum)
 
     # 切换窗口，传入参数为number
-    def switch_win(self,number):
+    def switch_win(self, number):
         all_windows = self.driver.window_handles
         logger.info("当前有{}个窗口,当前窗口句柄分别是{}".format(len(all_windows), all_windows))
         # logger.info("当前窗口句柄分别是{}".format(all_windows))
         self.driver.switch_to.window(all_windows[number])
-
-
 
     # def get_content(self):
     #     self.getElement()
 
     # def get_elements_by_tag(self,locator):
     #     return self.driver.find_elements_by_tag_name(locator)
-
-
-
