@@ -4,6 +4,7 @@ from base.selenium_driver import SeleniumDriver
 from common.logger import Logger
 
 from pages.yw_list_tb import TbYwListPage
+from pages.yw_list_wshy import WshyYwListPage
 from pages.yw_list_ycjy import YcjyYwListPage
 
 logger = Logger(logger='addtbaj').getlog()
@@ -24,9 +25,14 @@ class AddAJ(SeleniumDriver):
         tb=TbYwListPage()  # 实例化页面，获取元素，对元素进行操作
         self.click(tb.addbutton(),'class')  # 点击添加案件按钮
 
-    # 添加延长羁押
+    # 添加延长羁押案件
     def add_ycjy_aj(self):
         ycjy=YcjyYwListPage()  # 实例化页面，获取元素，对元素进行操作
+        self.click(ycjy.addbutton(),'class')  # 点击添加案件按钮
+
+    # 添加网上换押案件
+    def add_wshy_aj(self):
+        ycjy=WshyYwListPage()  # 实例化页面，获取元素，对元素进行操作
         self.click(ycjy.addbutton(),'class')  # 点击添加案件按钮
 
 

@@ -33,4 +33,10 @@ class ChooseXtName(SeleniumDriver):
         ywlx=HomePage()  # 实例化页面，获取元素，对元素进行操作
         self.click(ywlx.ycjy(),'xpath') # 选择业务类型
 
+    # 换押流程
+    def choose_wshy(self):
+        ywlx=HomePage()  # 实例化页面，获取元素，对元素进行操作
+        self.click(ywlx.wshy(),'xpath') # 选择业务类型
+
+
 

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="" />
+    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/ajxx_whsy_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/yw_list_wshy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_cases/test_41_wshy_qlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/addaj.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/addaj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/chooseywname.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/chooseywname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/fill_ajxx.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/fill_ajxx.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +237,7 @@
       <workItem from="1567667821123" duration="55891000" />
       <workItem from="1568108744735" duration="2784000" />
       <workItem from="1568118553753" duration="12981000" />
-      <workItem from="1568944778863" duration="21671000" />
+      <workItem from="1568944778863" duration="22627000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -347,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568975085638</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2019-09-20-18:25">
+      <created>1568975140960</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1568975140960</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -389,7 +407,8 @@
     <MESSAGE value="2019-09-20-18" />
     <MESSAGE value="2019-09-20-18:06" />
     <MESSAGE value="2019-09-20-18:24" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-09-20-18:24" />
+    <MESSAGE value="2019-09-20-18:25" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-20-18:25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -408,6 +427,10 @@
           <url>file://$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py</url>
           <line>53</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py</url>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -35,6 +35,17 @@ class FillElementValue(SeleniumDriver):
         self.driver.execute_script(js)  # 执行js脚本
         self.text_input('2019-09-21', ycjy.jzrq())  # 原羁押截止日期
 
+    # 填写网上换押页面信息
+    def fill_wshy_ajxx(self):
+        ycjy = YcjyAjxxPage()  # 实例化案件信息页面，给文本框输入数据
+        self.text_input('同案人', ycjy.tarfield())  # 同案人输入框
+        js = 'document.getElementById("jqDatedyjyksrq").removeAttribute("readonly")'
+        self.driver.execute_script(js)  # 执行js脚本
+        self.text_input('2019-09-20', ycjy.ksrq())  # 原羁押开始日期
+        js = 'document.getElementById("jqDatedyjyjzrq").removeAttribute("readonly")'
+        self.driver.execute_script(js)  # 执行js脚本
+        self.text_input('2019-09-21', ycjy.jzrq())  # 原羁押截止日期
+
 
 
 
