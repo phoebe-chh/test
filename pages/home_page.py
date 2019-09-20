@@ -12,10 +12,15 @@ class HomePage(ReadExcel):
         通过pagename和elementname获取配置文件中的信息
     '''
 
+    # 提捕业务
     def tbyw(self):
         return self.get_element('homepage_ywlx','element1')  # 获取页面元素路径
 
+    # 移诉
     def ysyw(self):
         return self.get_element('homepage_ywlx','element2')  # 获取页面元素路径
 
+    # 延长羁押
+    def ycjy(self):
+        return self.get_element('homepage_ywlx', 'element3')  # 获取页面元素路径
 

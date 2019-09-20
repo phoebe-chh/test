@@ -19,7 +19,7 @@ logger.setLevel(level=logging.INFO)
 
 class YsTest(unittest.TestCase):
     """
-    移诉完整流程测试
+    延长羁押完整流程测试
     """
     @classmethod
     def setUpClass(cls):
@@ -38,19 +38,19 @@ class YsTest(unittest.TestCase):
         result=po.is_element_exist('//*[@id="identify"]',"xpath")  # 通过登陆后的单位判断是否登陆成功
         self.assertTrue(result)
 
-    def test_02_enter_tb_ajlist(self):
+    def test_02_enter_ycjy_ajlist(self):
 
-        """进入移诉案件列表"""
-        tb = ChooseXtName(self.driver)
-        tb.switch_iframe(0)
-        tb.choose_ys()  # 选择进入移诉业务
+        """进入延长羁押案件列表"""
+        xtname = ChooseXtName(self.driver)
+        xtname.switch_iframe(0)
+        xtname.choose_ycjq()  # 选择进入延长羁押业务
         try:
-            assert "移诉" in tb.get_page_title()  # 获取页面标题,判断是否登陆成功
-            logger.info("进入移诉业务成功")
+            assert "延长羁押" in xtname.get_page_title()  # 获取页面标题,判断是否登陆成功
+            logger.info("进入延长羁押业务成功")
         except Exception as e:
-            logger.info("进入移诉业务失败，抛出异常:%s"%e)
+            logger.info("进入延长羁押业务失败，抛出异常:%s"%e)
 
-    def test_03_tb_addtbaj(self):
+    def test_03_ycjy_addaj(self):
 
         """点击选择案件，进入提案器"""
 
@@ -62,17 +62,9 @@ class YsTest(unittest.TestCase):
         cp=ChoosePeople(self.driver)  # 开始选择案件
         cp.find_avaibale_tbaj()  # 调用查找嫌疑人的方法
 
-    # def test_04_fill_in_value(self):
-    #
-    #     """进入移诉页面，填写字段信息"""
-    #
-    #     tb = FillElementValue(self.driver)
-    #     tb.fill_in_tb_ajxx()  # 填写页面字段内容
-    #     logger.info('页面字段内容填写结束')
-
     def test_04_tb_chooseqzcs(self):
 
-        """进入移诉页面，选择强制措施并保存"""
+        """进入延长羁押页面，选择强制措施并保存"""
         tbaj = ChooseQzcs(self.driver)
         tbaj.chooseqzcs_ys() # 调用选择强制措施方法
         logger.info('强制措施选择结束')
@@ -86,7 +78,7 @@ class YsTest(unittest.TestCase):
         zjxt.uploadfile()  # 上传文书方法
         self.driver.switch_to.default_content()
         zjxt.uploadjz()  # 上传卷宗方法
-        self.switch_window(0)  # 切回移诉页面
+        self.switch_window(0)  # 切回延长羁押页面
 
     def test_06_get_ajid(self):
         """从页面url获取ajid，并保存到文件中"""
@@ -105,10 +97,10 @@ class YsTest(unittest.TestCase):
         db.exe_update(sql)  # 执行sql
 
     def test_08_tb_goys(self):
-        """点击移诉按钮，发起移诉,至此公安端页面操作结束"""
+        """点击延长羁押按钮，发起延长羁押,至此公安端页面操作结束"""
 
         ys = ChooseQzcs(self.driver)
-        ys.start_ys()  # 发起移诉流程
+        ys.start_ys()  # 发起延长羁押流程
 
     def test_09_tb_save_all_data(self):
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""
@@ -138,12 +130,14 @@ class YsTest(unittest.TestCase):
 
 if __name__ == '__main__':
     #运行所有
-    unittest.main(verbosity=2)
+    # unittest.main(verbosity=2)
     # #运行单个用例
-    # testunit=unittest.TestSuite()
-    # testunit.addTest(YsTest('test_09_tb_save_all_data'))#添加测试用例方法名
-    # runer=unittest.TextTestRunner(verbosity=2)
-    # runer.run(testunit)
+    testunit=unittest.TestSuite()
+    testunit.addTest(YsTest('test_01_login'))#添加测试用例方法名
+    testunit.addTest(YsTest('test_02_enter_ycjy_ajlist'))  # 添加测试用例方法名
+    testunit.addTest(YsTest('test_03_ycjy_addaj'))  # 添加测试用例方法名
+    runer=unittest.TextTestRunner(verbosity=2)
+    runer.run(testunit)
     # # #
 
 

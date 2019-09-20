@@ -18,9 +18,16 @@ class AddTbAJ(SeleniumDriver):
         super().__init__(driver)
         self.driver=driver
 
+    # 添加提捕案件
     def addtbaj(self):
         tb=TbYwListPage()  # 实例化页面，获取元素，对元素进行操作
         self.click(tb.addbutton(),'class')  # 点击添加案件按钮
+
+    # 添加延长羁押
+    def add_ycjy_aj(self):
+        tb=TbYwListPage()  # 实例化页面，获取元素，对元素进行操作
+        self.click(tb.addbutton(),'class')  # 点击添加案件按钮
+
 
 
 
