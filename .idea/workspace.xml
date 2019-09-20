@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/yw_list_ycjy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfxtyw/addaj.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/addaj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfxtyw/chooseywname.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/chooseywname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/yw_list_tb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/yw_list_tb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/yw_list_ycjy.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/yw_list_ycjy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +231,7 @@
       <workItem from="1567667821123" duration="55891000" />
       <workItem from="1568108744735" duration="2784000" />
       <workItem from="1568118553753" duration="12981000" />
-      <workItem from="1568944778863" duration="3270000" />
+      <workItem from="1568944778863" duration="3401000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -271,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568948460185</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2019-09-20-11:24">
+      <created>1568949894229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568949894229</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -304,7 +308,8 @@
     <MESSAGE value="22222222" />
     <MESSAGE value="2019-09-19" />
     <MESSAGE value="2019-09-20" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-09-20" />
+    <MESSAGE value="2019-09-20-11:24" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-20-11:24" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autotest$post.coverage" NAME="post Coverage Results" MODIFIED="1568091407842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
