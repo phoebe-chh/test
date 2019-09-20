@@ -1,9 +1,10 @@
+import time
 import unittest
 from base.browser_driver import BrowserDriver
 from common.elementexist import ElemnetExist
 from datebase.database import DataBase
 from fileprocess.savedata import SaveResultToFile
-from zfxtyw.addaj import AddTbAJ
+from zfxtyw.addaj import AddAJ
 from zfxtyw.choose_qzcs_type import ChooseQzcs
 from zfxtyw.choose_supect import ChoosePeople
 from pages.home_page import *
@@ -49,13 +50,14 @@ class YsTest(unittest.TestCase):
             logger.info("进入延长羁押业务成功")
         except Exception as e:
             logger.info("进入延长羁押业务失败，抛出异常:%s"%e)
+        # time.sleep(3)
 
     def test_03_ycjy_addaj(self):
 
         """点击选择案件，进入提案器"""
 
-        choosepeople = AddTbAJ(self.driver)
-        choosepeople.addtbaj()  # 点击添加案件按钮
+        add = AddAJ(self.driver)
+        add.add_ycjy_aj()# 点击添加案件按钮
         iframe2 = self.driver.find_elements_by_tag_name("iframe")[0]
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")
