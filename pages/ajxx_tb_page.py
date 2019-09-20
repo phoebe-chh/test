@@ -14,9 +14,6 @@ class TbAjxxPage(ReadExcel):
     def wjglbutton(self):
         return self.get_element('ajxx_tb','element1')
 
-    # def xyrlist(self):
-    #     return self.get_element('ajxx_tb','element2')
-
     def qzcscell(self):
         return self.get_element('ajxx_tb','element3')
 

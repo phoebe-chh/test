@@ -1,5 +1,8 @@
 import time
 import unittest
+
+from zfxtyw.fill_ajxx import FillElementValue
+
 from base.browser_driver import BrowserDriver
 from common.elementexist import ElemnetExist
 from datebase.database import DataBase
@@ -54,7 +57,7 @@ class YcjyTest(unittest.TestCase):
 
     def test_03_ycjy_addaj(self):
 
-        """点击选择案件，进入提案器"""
+        """点击选择案件，选择在押人员"""
 
         add = AddAJ(self.driver)
         add.add_ycjy_aj()  # 点击添加案件按钮
@@ -62,14 +65,16 @@ class YcjyTest(unittest.TestCase):
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")
         cp=ChoosePeople(self.driver)  # 开始选择案件
-        cp.find_zyry()  # 调用查找嫌疑人的方法
+        cp.find_zyry()  # 调用查找案件的方法
 
-    def test_04_tb_chooseqzcs(self):
+    def test_04_ycjy_fill_data(self):
 
-        """进入延长羁押页面，选择强制措施并保存"""
-        tbaj = ChooseQzcs(self.driver)
-        tbaj.chooseqzcs_ys() # 调用选择强制措施方法
-        logger.info('强制措施选择结束')
+        """进入延长羁押案件信息页面，填写必填项"""
+        ycjy = FillElementValue(self.driver)
+        ycjy.fill_ycjy_ajxx() # 调用填写案件信息的方法
+        time.sleep(5)
+        # logger.info('强制措施选择结束')
+
 
     def test_05_jzxt_uploadfile(self):
 
@@ -138,6 +143,7 @@ if __name__ == '__main__':
     testunit.addTest(YcjyTest('test_01_login'))#添加测试用例方法名
     testunit.addTest(YcjyTest('test_02_enter_ycjy_ajlist'))  # 添加测试用例方法名
     testunit.addTest(YcjyTest('test_03_ycjy_addaj'))  # 添加测试用例方法名
+    testunit.addTest(YcjyTest('test_04_ycjy_fill_data'))
     runer=unittest.TextTestRunner(verbosity=2)
     runer.run(testunit)
     # # #
