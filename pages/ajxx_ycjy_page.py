@@ -13,11 +13,15 @@ class YcjyAjxxPage(ReadExcel):
 
     # 文件管理按钮
     def wjglbutton(self):
-        return self.get_element('ajxx_ycjy','element1')
+        return self.get_element('ajxx_ycjy','element6')
 
     # 送达看守所按钮
-    def savebutton(self):
+    def sendbutton(self):
         return self.get_element('ajxx_ycjy','element5')
+
+    # 保存按钮
+    def savebutton(self):
+        return self.get_element('ajxx_ycjy','element7')
 
     # 同案人输入框
     def tarfield(self):
@@ -30,12 +34,6 @@ class YcjyAjxxPage(ReadExcel):
     # 原羁押截止日期
     def jzrq(self):
         return self.get_element('ajxx_ycjy', 'element3')
-
-    #
-    #
-    # # 点击提起移诉后，弹出页面的确认提起按钮
-    # def confirmbutton(self):
-    #     return self.get_element('ajxx_ycjy', 'element16')
 
 
 

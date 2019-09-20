@@ -43,22 +43,5 @@ class ChooseQzcs(SeleniumDriver):
         self.double_click(tb.savebutton(), 'xpath')  # 点击保存按钮
         time.sleep(2)
 
-    # 发起提捕流程
-    def start_tb(self):
-        tb = TbAjxxPage()
-        self.double_click(tb.subbitbutton(),'xpath')
-        time.sleep(5)
-
-    # 发起移诉流程
-    def start_ys(self):
-        ys = YsAjxxPage()
-        self.click(ys.subbitbutton(),'xpath') # 点击移诉按钮
-        time.sleep(2)
-        # 在弹出页面，点击确认按钮
-        self.switch_iframe(0) # 有弹出页面，需要切换iframe
-        self.double_click(ys.confirmbutton(),'id')
-        time.sleep(15)
-
-
 
 

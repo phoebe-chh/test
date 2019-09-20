@@ -5,6 +5,7 @@ import time
 from base.selenium_driver import SeleniumDriver
 from common.logger import Logger
 from pages.ajxx_tb_page import TbAjxxPage
+from pages.ajxx_ycjy_page import YcjyAjxxPage
 from pages.ajxx_ys_page import YsAjxxPage
 from pages.jzxt_page import JzxtPage
 
@@ -21,15 +22,22 @@ class UploadFile(SeleniumDriver):
         super().__init__(driver)
         self.driver=driver
 
-    # 进入卷宗系统
+    # 从提捕案件信息进入卷宗系统
     def enterjzxt_tb(self):
         wjgl=TbAjxxPage()  # 从案件信息页面点击文件管理按钮，进入卷宗系统页面
         self.click(wjgl.wjglbutton(),'xpath')
         time.sleep(3)
 
+    # 从移诉案件信息进入卷宗系统
     def enterjzxt_ys(self):
         wjgl=YsAjxxPage()  # 从案件信息页面点击文件管理按钮，进入卷宗系统页面
         self.click(wjgl.wjglbutton(),'xpath')
+        time.sleep(3)
+
+    # 从延长羁押案件信息进入卷宗系统
+    def enterjzxt_ycjy(self):
+        wjgl=YcjyAjxxPage()  # 从案件信息页面点击文件管理按钮，进入卷宗系统页面
+        self.click(wjgl.wjglbutton(),'id')
         time.sleep(3)
 
     # 上传文书流程方法

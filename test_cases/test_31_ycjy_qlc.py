@@ -17,6 +17,8 @@ from zfxtyw.chooseywname import ChooseXtName
 from zfxtyw.getajid import GetAjidFromUrl
 from zfxtyw.jzxt_uploadfile import UploadFile
 from zfxtyw.login import LoginPageTest
+from zfxtyw.start_yw import StartYw
+
 logger = Logger(logger='ys-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 
@@ -71,20 +73,18 @@ class YcjyTest(unittest.TestCase):
 
         """进入延长羁押案件信息页面，填写必填项"""
         ycjy = FillElementValue(self.driver)
-        ycjy.fill_ycjy_ajxx() # 调用填写案件信息的方法
+        ycjy.fill_ycjy_ajxx()  # 调用填写案件信息的方法
         time.sleep(5)
-        # logger.info('强制措施选择结束')
-
 
     def test_05_jzxt_uploadfile(self):
 
         """进入卷宗系统，上传文书和卷宗"""
         zjxt = UploadFile(self.driver)
-        zjxt.enterjzxt_ys()  # 进入文件管理页面
+        zjxt.enterjzxt_ycjy()  # 进入文件管理页面
         self.switch_window(1)  # 需要切换窗口
         zjxt.uploadfile()  # 上传文书方法
-        self.driver.switch_to.default_content()
-        zjxt.uploadjz()  # 上传卷宗方法
+        # self.driver.switch_to.default_content()
+        # zjxt.uploadjz()  # 上传卷宗方法
         self.switch_window(0)  # 切回延长羁押页面
 
     def test_06_get_ajid(self):
@@ -106,7 +106,7 @@ class YcjyTest(unittest.TestCase):
     def test_08_tb_goys(self):
         """点击延长羁押按钮，发起延长羁押,至此公安端页面操作结束"""
 
-        ys = ChooseQzcs(self.driver)
+        ys = StartYw(self.driver)
         ys.start_ys()  # 发起延长羁押流程
 
     def test_09_tb_save_all_data(self):
@@ -144,6 +144,7 @@ if __name__ == '__main__':
     testunit.addTest(YcjyTest('test_02_enter_ycjy_ajlist'))  # 添加测试用例方法名
     testunit.addTest(YcjyTest('test_03_ycjy_addaj'))  # 添加测试用例方法名
     testunit.addTest(YcjyTest('test_04_ycjy_fill_data'))
+    testunit.addTest(YcjyTest('test_05_jzxt_uploadfile'))
     runer=unittest.TextTestRunner(verbosity=2)
     runer.run(testunit)
     # # #
