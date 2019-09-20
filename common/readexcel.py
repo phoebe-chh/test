@@ -17,7 +17,7 @@ class ReadExcel:
     # 读取的配置文件中的页面名称
     def testcase_name(self, casename):
         self.initestdata()  # 初始化数据
-        self.df = pd.read_excel(r'D:\PycharmProjects\autotest\config\config.xlsx',sheet_name='config')
+        self.df = pd.read_excel(r'../config/config.xlsx',sheet_name='config')
         test_data = []
         for i in self.df.index.values:  # 获取行号的索引，并对其进行遍历：
             row_data = self.df.loc[i].reindex(['页面名称'])  # 根据i来获取每一行指定的数据 并存入到列表中

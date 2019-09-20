@@ -18,7 +18,7 @@ logger = Logger(logger='ys-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 
 
-class YsTest(unittest.TestCase):
+class YcjyTest(unittest.TestCase):
     """
     延长羁押完整流程测试
     """
@@ -57,12 +57,12 @@ class YsTest(unittest.TestCase):
         """点击选择案件，进入提案器"""
 
         add = AddAJ(self.driver)
-        add.add_ycjy_aj()# 点击添加案件按钮
+        add.add_ycjy_aj()  # 点击添加案件按钮
         iframe2 = self.driver.find_elements_by_tag_name("iframe")[0]
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")
         cp=ChoosePeople(self.driver)  # 开始选择案件
-        cp.find_avaibale_tbaj()  # 调用查找嫌疑人的方法
+        cp.find_zyry()  # 调用查找嫌疑人的方法
 
     def test_04_tb_chooseqzcs(self):
 
@@ -135,9 +135,9 @@ if __name__ == '__main__':
     # unittest.main(verbosity=2)
     # #运行单个用例
     testunit=unittest.TestSuite()
-    testunit.addTest(YsTest('test_01_login'))#添加测试用例方法名
-    testunit.addTest(YsTest('test_02_enter_ycjy_ajlist'))  # 添加测试用例方法名
-    testunit.addTest(YsTest('test_03_ycjy_addaj'))  # 添加测试用例方法名
+    testunit.addTest(YcjyTest('test_01_login'))#添加测试用例方法名
+    testunit.addTest(YcjyTest('test_02_enter_ycjy_ajlist'))  # 添加测试用例方法名
+    testunit.addTest(YcjyTest('test_03_ycjy_addaj'))  # 添加测试用例方法名
     runer=unittest.TextTestRunner(verbosity=2)
     runer.run(testunit)
     # # #
