@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ajid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ajid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_01_tb_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_01_tb_qlc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909111100.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201049.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201054.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201056.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201112.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201334.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201335.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201348.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201350.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201352.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201354.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201357.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201401.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201403.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201405.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201407.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201433.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201436.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201448.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201451.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201502.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201508.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201509.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201608.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201610.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/201909201611.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +253,7 @@
       <workItem from="1567667821123" duration="55891000" />
       <workItem from="1568108744735" duration="2784000" />
       <workItem from="1568118553753" duration="12981000" />
-      <workItem from="1568944778863" duration="20337000" />
+      <workItem from="1568944778863" duration="20585000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -319,7 +339,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568970021113</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2019-09-20-18">
+      <created>1568973877025</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568973877025</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2019-09-20-18:06">
+      <created>1568973989951</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1568973989951</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -358,7 +392,9 @@
     <MESSAGE value="2019-09-20-16:15" />
     <MESSAGE value="2019-09-20-16:43" />
     <MESSAGE value="2019-09-20-17:00" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-09-20-17:00" />
+    <MESSAGE value="2019-09-20-18" />
+    <MESSAGE value="2019-09-20-18:06" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-20-18:06" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
