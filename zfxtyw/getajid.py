@@ -17,5 +17,5 @@ class GetAjidFromUrl(SeleniumDriver):
         url = self.driver.current_url  # 获取当前页面的url，从url中提取ajid
         pattern = '\w{32}'  # 正则表达式，32位数字的单词，
         ajid = re.findall(pattern, url, flags=0)[number]  # 返回结果是个列表，ajid是列表中的第二个index
-        logger.info("获取到的ajid为{}".format(ajid))
+        logger.info("获取到的ajid为:{}".format(ajid))
         return ajid
