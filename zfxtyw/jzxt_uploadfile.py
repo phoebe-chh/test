@@ -41,7 +41,7 @@ class UploadFile(SeleniumDriver):
         time.sleep(3)
 
     # 上传文书流程方法
-    def uploadfile(self):
+    def uploadfile(self,filepath):
         logger.info("开始上传公安文书")
         jzxt = JzxtPage()  # 引入卷宗系统页面
         self.get_page_title()
@@ -49,7 +49,10 @@ class UploadFile(SeleniumDriver):
         self.click(jzxt.uploadbutton(),'id')
         self.switch_iframe(1)
         self.double_click(jzxt.choosefileflashbutton(), 'xpath')
-        os.popen(r'"F:\2019-06\autotest\upload.exe" "chrome" "F:\2019-06\autotest\起诉意见书.pdf"')
+        # os.popen(r'"F:\2019-06\autotest\upload.exe" "chrome" "F:\2019-06\autotest\起诉意见书.pdf"')
+        str="F://2019-06//autotest//upload.exe"+" " + "chrome" + " " + filepath
+        logger.info(str)
+        os.popen(str)
         time.sleep(5)
         all_input = self.driver.find_elements_by_tag_name("input")
         all_input[0].click()

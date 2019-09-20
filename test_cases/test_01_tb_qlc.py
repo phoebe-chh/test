@@ -86,7 +86,7 @@ class TbTest(unittest.TestCase):
         zjxt = UploadFile(self.driver)
         zjxt.enterjzxt_tb() # 进入文件管理页面
         self.switch_window(1)  # 需要切换窗口
-        zjxt.uploadfile()  # 上传文书方法
+        zjxt.uploadfile(r"F:\2019-06\autotest\起诉意见书.pdf")  # 上传文书，传入文书路径
         self.driver.switch_to.default_content()
         zjxt.uploadjz()  # 上传卷宗方法
         self.switch_window(0)  # 切回提捕页面

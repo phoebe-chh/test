@@ -84,7 +84,7 @@ class YcjyTest(unittest.TestCase):
         zjxt = UploadFile(self.driver)
         zjxt.enterjzxt_ycjy()  # 进入文件管理页面
         self.switch_window(1)  # 需要切换窗口
-        zjxt.uploadfile()  # 上传文书方法
+        zjxt.uploadfile(r"F:\2019-06\autotest\延长羁押拘留期限通知书.pdf")
         self.switch_window(0)  # 切回延长羁押页面
         time.sleep(5)
 
@@ -94,15 +94,6 @@ class YcjyTest(unittest.TestCase):
         sa=SaveResultToFile()
         sa.writefile('ajid',ajid)  # 获取页面ajid并写入文件
 
-    def test_07_set_qzzt(self):
-
-        """设置签章状态为1，通过ajid查询数据库，设置n_yqz=1"""
-        # 设置签章状态的sql
-        ajid=SaveResultToFile().readfile('ajid')
-        sql = "update db_jz.t_jzgl_wj set n_yqz =1 WHERE c_ywid='%s' and c_store_path is not null"%(ajid)
-        # 链接数据库执行sql
-        db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
-        db.exe_update(sql)  # 执行sql
 
     def test_08_start_ycjy(self):
         """点击延长羁押按钮，发起延长羁押,至此公安端页面操作结束"""
@@ -115,19 +106,19 @@ class YcjyTest(unittest.TestCase):
         savedata = SaveResultToFile()
         ajid =savedata.readfile('ajid')
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
-        sql_ajcm="SELECT  ajxx.c_ajmc  FROM db_yw.t_ys_ajxx  ajxx WHERE c_id='%s'"%(ajid) # 通过sql查询ajmc
+        sql_ajcm="SELECT  ajxx.c_ajmc  FROM db_yw.t_ycjy_ajxx  ajxx WHERE c_id='%s'"%(ajid) # 通过sql查询ajmc
         ajmc=db.getdata(sql_ajcm,0)[1]  # 执行sql
         savedata.writefile('案件名称',ajmc)
         savedata.writefile('平台案件编号',ajid)
-        sql_jcajid = "SELECT  ajxx.c_jcajid  FROM db_yw.t_ys_ajxx  ajxx WHERE c_id='%s'" % (ajid)
+        sql_jcajid = "SELECT  ajxx.c_jcajid  FROM db_yw.t_ycjy_ajxx  ajxx WHERE c_id='%s'" % (ajid)
         jcajid = db.getdata(sql_jcajid,0)[1]   # 执行sql
         savedata.writefile('平台案件关联编号',jcajid)
-        sql_jsdw = "SELECT corp.c_alias alise_js FROM db_yw.t_ys_ajxx ajxx JOIN db_uim.t_aty_corp corp " \
-                   "ON ajxx.c_jcyjsdw = corp.c_id WHERE ajxx.c_id =  '%s' " % (ajid)
+        sql_jsdw = "SELECT corp.c_alias alise_js FROM db_yw.t_ycjy_ajxx ajxx JOIN db_uim.t_aty_corp corp " \
+                   "ON ajxx.c_sskss = corp.c_id WHERE ajxx.c_id =  '%s' " % (ajid)
         jsdw = db.getdata(sql_jsdw,0)[1]   # 执行sql
         savedata.writefile('接收单位编号', jsdw)
-        sql_fsdw="SELECT corp.c_alias alise_fs FROM db_yw.t_ys_ajxx ajxx JOIN " \
-                 "db_uim.t_aty_corp corp ON ajxx.c_gaysdw = corp.c_id WHERE ajxx.c_id = '%s'" % (ajid)
+        sql_fsdw="SELECT corp.c_alias alise_fs FROM db_yw.t_ycjy_ajxx ajxx JOIN " \
+                 "db_uim.t_aty_corp corp ON ajxx.c_xtfqdw = corp.c_id WHERE ajxx.c_id = '%s'" % (ajid)
         fsdw=db.getdata(sql_fsdw,0)[1]
         savedata.writefile('发送单位编号',fsdw)
 
@@ -147,8 +138,8 @@ if __name__ == '__main__':
     testunit.addTest(YcjyTest('test_04_ycjy_fill_data'))
     testunit.addTest(YcjyTest('test_05_jzxt_uploadfile'))
     testunit.addTest(YcjyTest('test_06_get_ajid'))
-    testunit.addTest(YcjyTest('test_07_set_qzzt'))
     testunit.addTest(YcjyTest('test_08_start_ycjy'))
+    testunit.addTest(YcjyTest('test_09_tb_save_all_data'))
     runer=unittest.TextTestRunner(verbosity=2)
     runer.run(testunit)
     # # #
