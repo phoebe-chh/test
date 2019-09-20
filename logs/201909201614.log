@@ -1,0 +1,41 @@
+2019-09-20 16:14:05,468 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-20 16:14:05,468 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-20 16:14:08,296 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-20 16:14:09,825 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-20 16:14:09,835 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:09,888 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 16:14:09,945 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-20 16:14:09,955 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:10,019 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 16:14:10,073 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-20 16:14:10,075 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:10,145 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 16:14:11,360 - element-exist - INFO - 找到该元素
+2019-09-20 16:14:11,372 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-20 16:14:11,374 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="3721ec604497ec80d1018d1bc4b2d25f", element="0.07877984440214125-2")>]
+2019-09-20 16:14:11,441 - readconfig - INFO - 操作第7行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[9]/span[1]
+2019-09-20 16:14:11,451 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:11,886 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 16:14:11,895 - seleniumdriver - INFO - 当前页面标题为：延长羁押通知案件列表
+2019-09-20 16:14:11,899 - ys-qlc - INFO - 进入延长羁押业务成功
+2019-09-20 16:14:11,955 - readconfig - INFO - 操作第11行元素,当前测试对象元素路径：jqButton-btn
+2019-09-20 16:14:11,966 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:11,998 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 16:14:12,131 - ys-qlc - INFO - 开始选择案件和嫌疑人
+2019-09-20 16:14:12,161 - choosesupects - INFO - 当前页案件数量为2
+2019-09-20 16:14:12,220 - readconfig - INFO - 操作第19行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/table/tbody/tr[1]/td[1]/input
+2019-09-20 16:14:12,228 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:12,282 - seleniumdriver - INFO - 元素双击成功
+2019-09-20 16:14:12,305 - choosesupects - INFO - 当前提捕流程选择的嫌疑人姓名： 成祖裘
+2019-09-20 16:14:12,361 - readconfig - INFO - 操作第20行元素,当前测试对象元素路径：jqButtonSave
+2019-09-20 16:14:12,372 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:12,444 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 16:14:20,568 - readconfig - INFO - 操作第64行元素,当前测试对象元素路径：jqInputctar
+2019-09-20 16:14:20,588 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:20,648 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 16:14:20,718 - readconfig - INFO - 操作第65行元素,当前测试对象元素路径：jqDatedyjyksrq
+2019-09-20 16:14:20,721 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:20,864 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 16:14:20,927 - readconfig - INFO - 操作第66行元素,当前测试对象元素路径：jqDatedyjyjzrq
+2019-09-20 16:14:20,937 - seleniumdriver - INFO - 找到该元素
+2019-09-20 16:14:21,038 - seleniumdriver - INFO - 数据写入成功

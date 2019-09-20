@@ -1,0 +1,17 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 55a90ade60714f37997bd9c55cb02e3828bb1ac6)
++++ .idea/workspace.xml	(date 1568118564103)
+@@ -59,6 +59,9 @@
+       <find>switch_window</find>
+     </findStrings>
+   </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="ProjectId" id="1QMjo5aofMO5hwLBJ7oY1rleVey" />
+   <component name="PropertiesComponent">
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />

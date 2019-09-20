@@ -1,0 +1,74 @@
+2019-09-20 17:21:02,880 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-20 17:21:02,880 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-20 17:21:05,450 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-20 17:21:07,243 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-20 17:21:07,253 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:07,308 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 17:21:07,367 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-20 17:21:07,380 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:07,440 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 17:21:07,493 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-20 17:21:07,503 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:07,674 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:09,176 - element-exist - INFO - 找到该元素
+2019-09-20 17:21:09,187 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-20 17:21:09,187 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="4b32542c8143664864cbc879fdf343f7", element="0.6082141049400218-2")>]
+2019-09-20 17:21:09,256 - readconfig - INFO - 操作第7行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[9]/span[1]
+2019-09-20 17:21:09,266 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:09,739 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:09,743 - seleniumdriver - INFO - 当前页面标题为：延长羁押通知案件列表
+2019-09-20 17:21:09,748 - ys-qlc - INFO - 进入延长羁押业务成功
+2019-09-20 17:21:09,827 - readconfig - INFO - 操作第11行元素,当前测试对象元素路径：jqButton-btn
+2019-09-20 17:21:09,838 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:09,868 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:10,007 - ys-qlc - INFO - 开始选择案件和嫌疑人
+2019-09-20 17:21:10,035 - choosesupects - INFO - 当前页案件数量为2
+2019-09-20 17:21:10,089 - readconfig - INFO - 操作第19行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/table/tbody/tr[1]/td[1]/input
+2019-09-20 17:21:10,103 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:10,160 - seleniumdriver - INFO - 元素双击成功
+2019-09-20 17:21:10,184 - choosesupects - INFO - 当前提捕流程选择的嫌疑人姓名： 成祖裘
+2019-09-20 17:21:10,239 - readconfig - INFO - 操作第20行元素,当前测试对象元素路径：jqButtonSave
+2019-09-20 17:21:10,251 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:10,328 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:18,412 - readconfig - INFO - 操作第64行元素,当前测试对象元素路径：jqInputctar
+2019-09-20 17:21:18,423 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:18,487 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 17:21:18,552 - readconfig - INFO - 操作第65行元素,当前测试对象元素路径：jqDatedyjyksrq
+2019-09-20 17:21:18,562 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:18,710 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 17:21:18,779 - readconfig - INFO - 操作第66行元素,当前测试对象元素路径：jqDatedyjyjzrq
+2019-09-20 17:21:18,780 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:18,881 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 17:21:18,944 - readconfig - INFO - 操作第69行元素,当前测试对象元素路径：save
+2019-09-20 17:21:18,953 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:19,000 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:24,085 - readconfig - INFO - 操作第70行元素,当前测试对象元素路径：viewWrit
+2019-09-20 17:21:24,105 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:24,134 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:27,151 - jzxt - INFO - 开始上传公安文书
+2019-09-20 17:21:28,199 - seleniumdriver - INFO - 当前页面标题为：文件管理
+2019-09-20 17:21:28,292 - readconfig - INFO - 操作第22行元素,当前测试对象元素路径：//*[@id="jqTreeAreaFiles_ztree_3_span"]
+2019-09-20 17:21:28,302 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:28,343 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:28,422 - readconfig - INFO - 操作第23行元素,当前测试对象元素路径：jqHtmlAreaUp
+2019-09-20 17:21:28,425 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:29,083 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 17:21:29,096 - seleniumdriver - INFO - 当前页面的ifram个数为3
+2019-09-20 17:21:29,097 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="4b32542c8143664864cbc879fdf343f7", element="0.21008211720358982-3")>, <selenium.webdriver.remote.webelement.WebElement (session="4b32542c8143664864cbc879fdf343f7", element="0.21008211720358982-4")>, <selenium.webdriver.remote.webelement.WebElement (session="4b32542c8143664864cbc879fdf343f7", element="0.21008211720358982-5")>]
+2019-09-20 17:21:29,208 - readconfig - INFO - 操作第24行元素,当前测试对象元素路径：//*[@id="SWFUpload_0"]
+2019-09-20 17:21:29,220 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:29,286 - seleniumdriver - INFO - 元素双击成功
+2019-09-20 17:21:29,286 - jzxt - INFO - F://2019-06//autotest//upload.exe chrome F:/2019-06/autotest/起诉意见书.pdf
+2019-09-20 17:21:34,585 - readconfig - INFO - 操作第26行元素,当前测试对象元素路径：/html/body/div[6]/div/div[1]
+2019-09-20 17:21:34,592 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:34,622 - seleniumdriver - INFO - 元素双击成功
+2019-09-20 17:21:34,630 - seleniumdriver - INFO - 当前页面的ifram个数为3
+2019-09-20 17:21:34,630 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="4b32542c8143664864cbc879fdf343f7", element="0.21008211720358982-3")>, <selenium.webdriver.remote.webelement.WebElement (session="4b32542c8143664864cbc879fdf343f7", element="0.21008211720358982-4")>, <selenium.webdriver.remote.webelement.WebElement (session="4b32542c8143664864cbc879fdf343f7", element="0.21008211720358982-5")>]
+2019-09-20 17:21:34,700 - readconfig - INFO - 操作第27行元素,当前测试对象元素路径：/html/body/div[2]/form/table/tbody/tr[3]/td/div/table/tbody/tr/td[1]/div/button
+2019-09-20 17:21:34,710 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:34,776 - seleniumdriver - INFO - 元素双击成功
+2019-09-20 17:21:49,835 - get-ajid - INFO - 获取到的ajid为9FCD39969201DC102D53540BBB834F70
+2019-09-20 17:21:49,835 - searchresult - INFO - 保存结果到logs/ajid.txt
+2019-09-20 17:21:49,939 - readconfig - INFO - 操作第68行元素,当前测试对象元素路径：jqButton-btn
+2019-09-20 17:21:49,952 - seleniumdriver - INFO - 找到该元素
+2019-09-20 17:21:50,048 - seleniumdriver - INFO - 元素点击成功

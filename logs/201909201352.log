@@ -1,0 +1,20 @@
+2019-09-20 13:52:05,015 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-20 13:52:05,015 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-20 13:52:07,596 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-20 13:52:09,631 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-20 13:52:09,651 - seleniumdriver - INFO - 找到该元素
+2019-09-20 13:52:09,704 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 13:52:09,753 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-20 13:52:09,766 - seleniumdriver - INFO - 找到该元素
+2019-09-20 13:52:09,828 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 13:52:09,875 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-20 13:52:09,888 - seleniumdriver - INFO - 找到该元素
+2019-09-20 13:52:09,918 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 13:52:10,963 - element-exist - INFO - 找到该元素
+2019-09-20 13:52:10,974 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-20 13:52:10,974 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="a99fc3d4b183bd02cb85359a6ab0e680", element="0.3563746106531629-2")>]
+2019-09-20 13:52:11,038 - readconfig - INFO - 操作第7行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[9]/span[1]
+2019-09-20 13:52:11,048 - seleniumdriver - INFO - 找到该元素
+2019-09-20 13:52:11,470 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 13:52:11,476 - seleniumdriver - INFO - 当前页面标题为：延长羁押通知案件列表
+2019-09-20 13:52:11,480 - ys-qlc - INFO - 进入延长羁押业务成功

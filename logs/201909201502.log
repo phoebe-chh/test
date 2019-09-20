@@ -1,0 +1,37 @@
+2019-09-20 15:02:34,688 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-20 15:02:34,688 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-20 15:02:37,235 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-20 15:02:38,735 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-20 15:02:38,750 - seleniumdriver - INFO - 找到该元素
+2019-09-20 15:02:38,799 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 15:02:38,855 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-20 15:02:38,867 - seleniumdriver - INFO - 找到该元素
+2019-09-20 15:02:38,927 - seleniumdriver - INFO - 数据写入成功
+2019-09-20 15:02:38,980 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-20 15:02:38,993 - seleniumdriver - INFO - 找到该元素
+2019-09-20 15:02:39,044 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 15:02:40,294 - element-exist - INFO - 找到该元素
+2019-09-20 15:02:40,305 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-20 15:02:40,305 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="a882b88a62ec49ccdb4dc73577e5c13e", element="0.5873376491569844-2")>]
+2019-09-20 15:02:40,366 - readconfig - INFO - 操作第7行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[9]/span[1]
+2019-09-20 15:02:40,385 - seleniumdriver - INFO - 找到该元素
+2019-09-20 15:02:40,796 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 15:02:40,801 - seleniumdriver - INFO - 当前页面标题为：延长羁押通知案件列表
+2019-09-20 15:02:40,806 - ys-qlc - INFO - 进入延长羁押业务成功
+2019-09-20 15:02:40,865 - readconfig - INFO - 操作第11行元素,当前测试对象元素路径：jqButton-btn
+2019-09-20 15:02:40,876 - seleniumdriver - INFO - 找到该元素
+2019-09-20 15:02:40,907 - seleniumdriver - INFO - 元素点击成功
+2019-09-20 15:02:41,070 - ys-qlc - INFO - 开始选择案件和嫌疑人
+2019-09-20 15:02:41,092 - choosesupects - INFO - 当前页案件数量为2
+2019-09-20 15:02:41,092 - choosesupects - INFO - 正在查找第1条案件
+2019-09-20 15:02:41,092 - choosesupects - INFO - 当前的案件列表数量为2
+2019-09-20 15:02:43,220 - readconfig - INFO - 操作第19行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/table/tbody/tr[1]/td[1]/input
+2019-09-20 15:02:43,240 - seleniumdriver - INFO - 找到该元素
+2019-09-20 15:02:43,289 - seleniumdriver - INFO - 元素双击成功
+2019-09-20 15:02:43,319 - choosesupects - INFO - 当前提捕流程选择的嫌疑人姓名： 成祖裘
+2019-09-20 15:02:43,319 - choosesupects - INFO - 正在查找第2条案件
+2019-09-20 15:02:43,319 - choosesupects - INFO - 当前的案件列表数量为2
+2019-09-20 15:02:45,470 - readconfig - INFO - 操作第19行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/table/tbody/tr[1]/td[1]/input
+2019-09-20 15:02:45,480 - seleniumdriver - INFO - 找到该元素
+2019-09-20 15:02:45,536 - seleniumdriver - INFO - 元素双击成功
+2019-09-20 15:02:45,558 - choosesupects - INFO - 当前提捕流程选择的嫌疑人姓名： 成祖裘
