@@ -74,6 +74,8 @@ class YcjyTest(unittest.TestCase):
         """进入延长羁押案件信息页面，填写必填项"""
         ycjy = FillElementValue(self.driver)
         ycjy.fill_ycjy_ajxx()  # 调用填写案件信息的方法
+        start=StartYw(self.driver)  # 点击送达按钮
+        start.save_ycjy()
         time.sleep(5)
 
     def test_05_jzxt_uploadfile(self):
@@ -83,9 +85,8 @@ class YcjyTest(unittest.TestCase):
         zjxt.enterjzxt_ycjy()  # 进入文件管理页面
         self.switch_window(1)  # 需要切换窗口
         zjxt.uploadfile()  # 上传文书方法
-        # self.driver.switch_to.default_content()
-        # zjxt.uploadjz()  # 上传卷宗方法
         self.switch_window(0)  # 切回延长羁押页面
+        time.sleep(5)
 
     def test_06_get_ajid(self):
         """从页面url获取ajid，并保存到文件中"""
@@ -103,11 +104,11 @@ class YcjyTest(unittest.TestCase):
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
         db.exe_update(sql)  # 执行sql
 
-    def test_08_tb_goys(self):
+    def test_08_start_ycjy(self):
         """点击延长羁押按钮，发起延长羁押,至此公安端页面操作结束"""
-
-        ys = StartYw(self.driver)
-        ys.start_ys()  # 发起延长羁押流程
+        start = StartYw(self.driver)  # 点击送达按钮
+        start.start_ycjy()
+        time.sleep(5)
 
     def test_09_tb_save_all_data(self):
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""
@@ -145,6 +146,9 @@ if __name__ == '__main__':
     testunit.addTest(YcjyTest('test_03_ycjy_addaj'))  # 添加测试用例方法名
     testunit.addTest(YcjyTest('test_04_ycjy_fill_data'))
     testunit.addTest(YcjyTest('test_05_jzxt_uploadfile'))
+    testunit.addTest(YcjyTest('test_06_get_ajid'))
+    testunit.addTest(YcjyTest('test_07_set_qzzt'))
+    testunit.addTest(YcjyTest('test_08_start_ycjy'))
     runer=unittest.TextTestRunner(verbosity=2)
     runer.run(testunit)
     # # #

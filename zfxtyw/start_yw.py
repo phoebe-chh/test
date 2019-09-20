@@ -36,10 +36,16 @@ class StartYw(SeleniumDriver):
         self.double_click(ys.confirmbutton(), 'id')
         time.sleep(15)
 
-    # 发起移诉流程
+    # 延长羁押发起
     def start_ycjy(self):
         ycjy = YcjyAjxxPage()
-        self.click(ycjy.sendbutton(), 'id')  # 点击送达看守所按钮
+        self.click(ycjy.sendbutton(), 'class')  # 点击送达看守所按钮
+
+    # 保存延长羁押数据
+    def save_ycjy(self):
+        ycjy = YcjyAjxxPage()
+        self.click(ycjy.savebutton(), 'id')  # 点击送达看守所按钮
+
 
 
 
