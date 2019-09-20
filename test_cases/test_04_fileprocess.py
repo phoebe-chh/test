@@ -5,7 +5,7 @@ from fileprocess.putonserver import PutOnService
 from fileprocess.replacefilecontent import ReplaceFileContent
 from fileprocess.zipallfile import ZipAllFile
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='fileprocesstest').getlog()
 logger.setLevel(level = logging.INFO)
 

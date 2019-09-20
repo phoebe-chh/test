@@ -1,7 +1,7 @@
 import logging
 import os
 import configparser
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='read-config').getlog()
 logger.setLevel(level=logging.INFO)
 

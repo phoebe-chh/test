@@ -2,7 +2,7 @@ from datebase.database import DataBase
 from datebase.getajid import GetAjid
 
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='update_qzzt').getlog()
 logger.setLevel(level = logging.INFO)
 

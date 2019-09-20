@@ -2,7 +2,7 @@ import os
 import logging
 import configparser
 from selenium import webdriver
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='browserdriver').getlog()
 logger.setLevel(level=logging.INFO)
 

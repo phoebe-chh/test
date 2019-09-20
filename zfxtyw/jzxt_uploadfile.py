@@ -3,7 +3,7 @@ import os
 import time
 
 from base.selenium_driver import SeleniumDriver
-from logs.logger import Logger
+from common.logger import Logger
 from pages.ajxx_tb_page import TbAjxxPage
 from pages.ajxx_ys_page import YsAjxxPage
 from pages.jzxt_page import JzxtPage

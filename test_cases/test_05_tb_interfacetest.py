@@ -1,13 +1,11 @@
-import os
 import unittest
 import time
 import logging
 
 from datebase.database import DataBase
-from datebase.getajid import GetAjid
 from fileprocess.savedata import SaveResultToFile
 from interface.post import ZfxtInterface
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='callinterfacetest').getlog()
 logger.setLevel(level = logging.INFO)
 

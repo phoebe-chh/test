@@ -2,7 +2,7 @@ import psycopg2
 import logging
 
 from datebase.readconfig import ReadDbConfig
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger ='database').getlog()
 logger.setLevel(level=logging.INFO)
 

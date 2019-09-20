@@ -1,13 +1,12 @@
 import time
-import os
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 import logging
 
 from selenium.webdriver.support.wait import WebDriverWait
 
 from base.selenium_driver import SeleniumDriver
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='element-exist').getlog()
 logger.setLevel(level=logging.INFO)
 

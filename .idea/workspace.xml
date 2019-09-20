@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
+    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="2019-09-20">
+      <change afterPath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/browser_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/browser_driver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/autotest.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/autotest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/elementexist.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/elementexist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pageoperation.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/pageoperation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/readexcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readexcel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datebase/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/datebase/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datebase/getajid.py" beforeDir="false" afterPath="$PROJECT_DIR$/datebase/getajid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datebase/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/datebase/readconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datebase/updateqzzt.py" beforeDir="false" afterPath="$PROJECT_DIR$/datebase/updateqzzt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/encryption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/putonserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/putonserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/replacefilecontent.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/replacefilecontent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/savedata.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/savedata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/zipallfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/zipallfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ajxx_tb_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ajxx_tb_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ajxx_ys_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ajxx_ys_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/jzxt_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/jzxt_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/taq_tb_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/taq_tb_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/yw_list_tb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/yw_list_tb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/logintest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/logintest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_01_tb_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_01_tb_qlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_03_tb_checkdata_ga.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_03_tb_checkdata_ga.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_04_fileprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_04_fileprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_05_tb_interfacetest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_05_tb_interfacetest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_06_tb_login_zf.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_06_tb_login_zf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_reports/report_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_reports/report_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/addaj.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/addaj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/choose_qzcs_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/choose_qzcs_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/choose_supect.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/choose_supect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/chooseywname.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/chooseywname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/fill_ajxx.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/fill_ajxx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/getajid.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/getajid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/login.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +112,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../seleniumprac" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -82,15 +123,15 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\autotest" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\myclone\common" />
       <recent name="D:\PycharmProjects\autotest\xmls" />
       <recent name="D:\PycharmProjects\autotest\common" />
       <recent name="D:\PycharmProjects\autotest\zfxtyw" />
       <recent name="D:\PycharmProjects\autotest\commen" />
-      <recent name="D:\PycharmProjects\autotest\tools\driver" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PycharmProjects\autotest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -105,29 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.runner">
-    <configuration name="encryption" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="autotest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fileprocess" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileprocess/encryption.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test_02_ys_qlc">
     <configuration name="putonserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,6 +213,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_02_ys_qlc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autotest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_04_fileprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,18 +259,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.test_04_fileprocess" />
-      <item itemvalue="Python.encryption" />
       <item itemvalue="Python.putonserver" />
       <item itemvalue="Python.run_all" />
       <item itemvalue="Python.runner" />
+      <item itemvalue="Python.test_02_ys_qlc" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_02_ys_qlc" />
         <item itemvalue="Python.runner" />
         <item itemvalue="Python.run_all" />
         <item itemvalue="Python.test_04_fileprocess" />
         <item itemvalue="Python.putonserver" />
-        <item itemvalue="Python.encryption" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +298,8 @@
       <workItem from="1567655839089" duration="8153000" />
       <workItem from="1567667821123" duration="55891000" />
       <workItem from="1568108744735" duration="2784000" />
-      <workItem from="1568118553753" duration="12248000" />
+      <workItem from="1568118553753" duration="12981000" />
+      <workItem from="1568944778863" duration="1829000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -280,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568119250603</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2019-09-19">
+      <created>1568882270625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568882270625</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -300,7 +349,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -309,13 +360,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deltet" />
     <MESSAGE value="22222222" />
-    <option name="LAST_COMMIT_MESSAGE" value="22222222" />
+    <MESSAGE value="2019-09-19" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-19" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autotest$post.coverage" NAME="post Coverage Results" MODIFIED="1568091407842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/autotest$logintest.coverage" NAME="logintest Coverage Results" MODIFIED="1567656828451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$putonserver.coverage" NAME="putonserver Coverage Results" MODIFIED="1568099468545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1568106034160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$test_02_ys_qlc.coverage" NAME="test_02_ys_qlc Coverage Results" MODIFIED="1568948211171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$replacefilecontent.coverage" NAME="replacefilecontent Coverage Results" MODIFIED="1568094245507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$encryption.coverage" NAME="encryption Coverage Results" MODIFIED="1568095352830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$zipallfile.coverage" NAME="zipallfile Coverage Results" MODIFIED="1568094910210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />

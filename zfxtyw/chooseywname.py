@@ -1,8 +1,7 @@
 import logging
-import time
 
 from base.selenium_driver import SeleniumDriver
-from logs.logger import Logger
+from common.logger import Logger
 from pages.home_page import HomePage
 
 

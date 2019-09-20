@@ -1,7 +1,7 @@
 import logging
 
 from base.selenium_driver import SeleniumDriver
-from logs.logger import Logger
+from common.logger import Logger
 from pages.login_page import LoginPage
 
 logger = Logger(logger='LoginPage').getlog()

@@ -1,6 +1,6 @@
 import time
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='searchresult').getlog()
 logger.setLevel(level = logging.INFO)
 

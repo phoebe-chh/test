@@ -1,8 +1,6 @@
-import time
-from selenium.webdriver.support import expected_conditions as EC
 import logging
 from base.selenium_driver import SeleniumDriver
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='pageoperation').getlog()
 logger.setLevel(level=logging.INFO)
 

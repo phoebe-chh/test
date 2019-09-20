@@ -2,9 +2,8 @@ import unittest
 import logging
 
 from datebase.database import DataBase
-from datebase.getajid import GetAjid
 from fileprocess.savedata import SaveResultToFile
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='checkdatatest').getlog()
 logger.setLevel(level = logging.INFO)
 

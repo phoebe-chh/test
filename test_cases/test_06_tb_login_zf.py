@@ -4,7 +4,7 @@ from pages.ajxx_tb_page import AJXX_TB
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='testcasezf').getlog()
 logger.setLevel(level = logging.INFO)
 

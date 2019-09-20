@@ -2,7 +2,7 @@ import logging
 import re
 
 from base.selenium_driver import SeleniumDriver
-from logs.logger import Logger
+from common.logger import Logger
 
 logger = Logger(logger='get-ajid').getlog()
 logger.setLevel(level=logging.INFO)

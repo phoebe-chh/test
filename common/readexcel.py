@@ -1,6 +1,6 @@
 import  pandas  as pd
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='readconfig').getlog()
 logger.setLevel(level=logging.INFO)
 

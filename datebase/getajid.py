@@ -1,9 +1,6 @@
-import configparser
-import os
-
 from datebase.database import DataBase
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='getajid').getlog()
 logger.setLevel(level=logging.INFO)
 

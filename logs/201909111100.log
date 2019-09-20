@@ -1,0 +1,13 @@
+2019-09-11 11:00:41,233 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-11 11:00:41,233 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-11 11:00:43,976 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-11 11:00:46,203 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-11 11:00:46,217 - seleniumdriver - INFO - 找到该元素
+2019-09-11 11:00:46,271 - seleniumdriver - INFO - 数据写入成功
+2019-09-11 11:00:46,323 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-11 11:00:46,335 - seleniumdriver - INFO - 找到该元素
+2019-09-11 11:00:46,403 - seleniumdriver - INFO - 数据写入成功
+2019-09-11 11:00:46,457 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-11 11:00:46,468 - seleniumdriver - INFO - 找到该元素
+2019-09-11 11:00:46,519 - seleniumdriver - INFO - 元素点击成功
+2019-09-11 11:00:47,673 - element-exist - INFO - 找到该元素

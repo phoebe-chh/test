@@ -2,7 +2,7 @@ import unittest
 from base.browser_driver import BrowserDriver
 from common.elementexist import ElemnetExist
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 from zfxtyw.login import LoginPageTest
 logger = Logger(logger='logintest').getlog()
 logger.setLevel(level=logging.INFO)

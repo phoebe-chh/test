@@ -10,7 +10,7 @@ from zfxtyw.choose_qzcs_type import ChooseQzcs
 from zfxtyw.choose_supect import ChoosePeople
 from pages.home_page import *
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 from zfxtyw.chooseywname import ChooseXtName
 from zfxtyw.fill_ajxx import FillElementValue
 from zfxtyw.jzxt_uploadfile import UploadFile

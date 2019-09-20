@@ -1,11 +1,9 @@
 #coding:utf-8
-import os
-import shutil
 import xml.dom.minidom
 import logging
 
 from common.readconfig import ReadConfig
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='repleace-file').getlog()
 logger.setLevel(level = logging.INFO)
 

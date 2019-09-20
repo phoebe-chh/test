@@ -4,7 +4,7 @@ import jpype
 import logging
 
 from common.readconfig import ReadConfig
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='encryption').getlog()
 logger.setLevel(level = logging.INFO)
 

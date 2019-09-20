@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 import time
 import os
 import logging
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='sendreportbyemail').getlog()
 logger.setLevel(level = logging.INFO)
 class  SendReportByEmail():

@@ -3,7 +3,7 @@ import time
 
 from base.selenium_driver import seleniumDriver
 from common.readexcel import ReadExcel
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='commenttest').getlog()
 logger.setLevel(level=logging.INFO)
 

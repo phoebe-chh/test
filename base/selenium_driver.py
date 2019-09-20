@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 import logging
 
-from logs.logger import Logger
+from common.logger import Logger
 
 logger = Logger(logger='seleniumdriver').getlog()
 logger.setLevel(level=logging.INFO)

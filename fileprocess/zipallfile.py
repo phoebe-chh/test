@@ -1,10 +1,9 @@
 import zipfile
 import os
-import shutil
 import logging
 
 from common.readconfig import ReadConfig
-from logs.logger import Logger
+from common.logger import Logger
 logger = Logger(logger='zipallfile').getlog()
 logger.setLevel(level = logging.INFO)
 
