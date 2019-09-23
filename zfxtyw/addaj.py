@@ -32,8 +32,8 @@ class AddAJ(SeleniumDriver):
 
     # 添加网上换押案件
     def add_wshy_aj(self):
-        ycjy=WshyYwListPage()  # 实例化页面，获取元素，对元素进行操作
-        self.click(ycjy.addbutton(),'class')  # 点击添加案件按钮
+        wshy=WshyYwListPage()  # 实例化页面，获取元素，对元素进行操作
+        self.click(wshy.addbutton(),'class')  # 点击添加案件按钮
 
 
 

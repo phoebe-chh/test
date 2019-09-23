@@ -70,11 +70,11 @@ class ChoosePeople(SeleniumDriver):
         table_aj_rows = ajtablelist.find_elements_by_tag_name('tr')
         ajnum = len(table_aj_rows) - 1  # 案件列表中案件的数量
         logger.info("当前页案件数量为%s" % ajnum)
-        if ajnum >= 1 and ajnum <= 5:
+        if ajnum >= 1:
             self.double_click(taq.checkradiobutton(), 'xpath')
             spsname = table_aj_rows[1].find_elements_by_tag_name('td')[3].text
             logger.info('当前提捕流程选择的嫌疑人姓名： %s' % spsname)
-            self.click(taq.confirmbutton(),'id') # 点击确认添加按钮
+            self.click(taq.confirmbutton(), 'id')  # 点击确认添加按钮
             time.sleep(8)
         else:
             logger.info("当前提案器中无案件，无法提案")

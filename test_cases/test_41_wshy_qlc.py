@@ -63,15 +63,15 @@ class WshyTest(unittest.TestCase):
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")
         cp = ChoosePeople(self.driver)  # 开始选择案件
-        cp.find_zyry()  # 调用查找案件的方法
+        cp.find_zyry()  # 调用查找在押人员的方法
 
-    def test_04_whsy_fill_data(self):
-        """进入换押案件信息页面，填写必填项"""
-        whsy = FillElementValue(self.driver)
-        whsy.fill_wshy_ajxx()  # 调用填写案件信息的方法
-        start = StartYw(self.driver)  # 点击送达按钮
-        start.save_whsy()
-        time.sleep(5)
+    # def test_04_whsy_fill_data(self):
+    #     """进入换押案件信息页面，填写必填项"""
+    #     whsy = FillElementValue(self.driver)
+    #     whsy.fill_wshy_ajxx()  # 调用填写案件信息的方法
+    #     start = StartYw(self.driver)  # 点击送达按钮
+    #     start.save_whsy()
+    #     time.sleep(5)
 
     def test_05_jzxt_uploadfile(self):
 
@@ -129,11 +129,11 @@ if __name__ == '__main__':
     testunit.addTest(WshyTest('test_01_login'))  # 添加测试用例方法名
     testunit.addTest(WshyTest('test_02_enter_whsy_ajlist'))  # 添加测试用例方法名
     testunit.addTest(WshyTest('test_03_whsy_addaj'))  # 添加测试用例方法名
-    testunit.addTest(WshyTest('test_04_whsy_fill_data'))
-    testunit.addTest(WshyTest('test_05_jzxt_uploadfile'))
-    testunit.addTest(WshyTest('test_06_get_ajid'))
-    testunit.addTest(WshyTest('test_08_start_whsy'))
-    testunit.addTest(WshyTest('test_09_tb_save_all_data'))
+    # testunit.addTest(WshyTest('test_04_whsy_fill_data'))
+    # testunit.addTest(WshyTest('test_05_jzxt_uploadfile'))
+    # testunit.addTest(WshyTest('test_06_get_ajid'))
+    # testunit.addTest(WshyTest('test_08_start_whsy'))
+    # testunit.addTest(WshyTest('test_09_tb_save_all_data'))
     runer = unittest.TextTestRunner(verbosity=2)
     runer.run(testunit)
     # # #
