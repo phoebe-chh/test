@@ -5,7 +5,7 @@ from common.elementexist import ElemnetExist
 from datebase.database import DataBase
 from datebase.updateqzzt import UpdateQzzt
 from fileprocess.savedata import SaveResultToFile
-from zfxtyw.addaj import AddTbAJ
+from zfxtyw.addaj import AddAJ
 from zfxtyw.choose_qzcs_type import ChooseQzcs
 from zfxtyw.choose_supect import ChoosePeople
 from pages.home_page import *
@@ -56,7 +56,7 @@ class TbTest(unittest.TestCase):
 
         """点击选择案件,进入提案器"""
 
-        choosepeople = AddTbAJ(self.driver)
+        choosepeople = AddAJ(self.driver)
         choosepeople.addtbaj() # 点击添加案件按钮
         iframe2 = self.driver.find_elements_by_tag_name("iframe")[0]
         self.driver.switch_to.frame(iframe2)

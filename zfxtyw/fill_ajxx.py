@@ -3,6 +3,7 @@ import logging
 from base.selenium_driver import SeleniumDriver
 from common.logger import Logger
 from pages.ajxx_tb_page import TbAjxxPage
+from pages.ajxx_whsy_page import WshyAjxxPage
 from pages.ajxx_ycjy_page import YcjyAjxxPage
 
 logger = Logger(logger='fillvalueoftb').getlog()
@@ -37,7 +38,7 @@ class FillElementValue(SeleniumDriver):
 
     # 填写网上换押页面信息
     def fill_wshy_ajxx(self):
-        ycjy = YcjyAjxxPage()  # 实例化案件信息页面，给文本框输入数据
+        ycjy = WshyAjxxPage()  # 实例化案件信息页面，给文本框输入数据
         self.text_input('同案人', ycjy.tarfield())  # 同案人输入框
         js = 'document.getElementById("jqDatedyjyksrq").removeAttribute("readonly")'
         self.driver.execute_script(js)  # 执行js脚本

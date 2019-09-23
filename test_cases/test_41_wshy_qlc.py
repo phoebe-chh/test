@@ -16,7 +16,6 @@ from zfxtyw.getajid import GetAjidFromUrl
 from zfxtyw.jzxt_uploadfile import UploadFile
 from zfxtyw.login import LoginPageTest
 from zfxtyw.start_yw import StartYw
-
 logger = Logger(logger='wshy-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 
@@ -57,9 +56,7 @@ class WshyTest(unittest.TestCase):
         # time.sleep(3)
 
     def test_03_whsy_addaj(self):
-
         """点击选择案件，选择在押人员"""
-
         add = AddAJ(self.driver)
         add.add_wshy_aj()  # 点击添加案件按钮
         iframe2 = self.driver.find_elements_by_tag_name("iframe")[0]
@@ -71,7 +68,7 @@ class WshyTest(unittest.TestCase):
     def test_04_whsy_fill_data(self):
         """进入换押案件信息页面，填写必填项"""
         whsy = FillElementValue(self.driver)
-        whsy.fill_whsy_ajxx()  # 调用填写案件信息的方法
+        whsy.fill_wshy_ajxx()  # 调用填写案件信息的方法
         start = StartYw(self.driver)  # 点击送达按钮
         start.save_whsy()
         time.sleep(5)
