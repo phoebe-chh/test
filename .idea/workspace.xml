@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
+    <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="2019-09-23 11:03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/yw_list_wshy.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/yw_list_wshy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905173430.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905173445.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905173456.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905173506.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905173517.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905173527.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905174445.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905174456.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190905174511.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906141715.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906142653.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906142924.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906143514.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906144241.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906144708.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906145047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906145317.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906152134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190906152150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190920111252.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190920160858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190920160859.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190920163109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190920163120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errormg/20190920164636.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/savedata.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/savedata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ajid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ajid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_cases/test_41_wshy_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_41_wshy_qlc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfxtyw/addaj.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/addaj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfxtyw/choose_supect.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/choose_supect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/start_yw.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/start_yw.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_41_wshy_qlc">
+  <component name="RunManager" selected="Python.savedata">
     <configuration name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +151,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_02_ys_qlc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="savedata" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,12 +159,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fileprocess" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileprocess/savedata.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,17 +220,17 @@
     <list>
       <item itemvalue="Python.run_all" />
       <item itemvalue="Python.runner" />
-      <item itemvalue="Python.test_02_ys_qlc" />
       <item itemvalue="Python.test_31_ycjy_qlc" />
       <item itemvalue="Python.test_41_wshy_qlc" />
+      <item itemvalue="Python.savedata" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.savedata" />
         <item itemvalue="Python.test_41_wshy_qlc" />
         <item itemvalue="Python.run_all" />
         <item itemvalue="Python.runner" />
         <item itemvalue="Python.test_31_ycjy_qlc" />
-        <item itemvalue="Python.test_02_ys_qlc" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +259,8 @@
       <workItem from="1567667821123" duration="55891000" />
       <workItem from="1568108744735" duration="2784000" />
       <workItem from="1568118553753" duration="12981000" />
-      <workItem from="1568944778863" duration="30005000" />
+      <workItem from="1568944778863" duration="45232000" />
+      <workItem from="1569289722524" duration="3522000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -375,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569202258585</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="2019-09-23 11:03">
+      <created>1569207799539</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1569207799539</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -420,21 +454,12 @@
     <MESSAGE value="2019-09-20-18:25" />
     <MESSAGE value="2019-09-20-18:40" />
     <MESSAGE value="2019-09-23:9:30" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-09-23:9:30" />
+    <MESSAGE value="2019-09-23 11:03" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-23 11:03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py</url>
           <option name="timeStamp" value="13" />
@@ -444,6 +469,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autotest$post.coverage" NAME="post Coverage Results" MODIFIED="1568091407842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/myclone$savedata.coverage" NAME="savedata Coverage Results" MODIFIED="1569297155945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$logintest.coverage" NAME="logintest Coverage Results" MODIFIED="1567656828451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$putonserver.coverage" NAME="putonserver Coverage Results" MODIFIED="1568099468545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1568106034160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
@@ -455,7 +481,7 @@
     <SUITE FILE_PATH="coverage/autotest$zipallfile.coverage" NAME="zipallfile Coverage Results" MODIFIED="1568094910210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$savedata.coverage" NAME="savedata Coverage Results" MODIFIED="1567762887531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$runner.coverage" NAME="runner Coverage Results" MODIFIED="1568112998658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/myclone$test_41_wshy_qlc.coverage" NAME="test_41_wshy_qlc Coverage Results" MODIFIED="1569207449821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$test_41_wshy_qlc.coverage" NAME="test_41_wshy_qlc Coverage Results" MODIFIED="1569235462043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$test_04_fileprocess.coverage" NAME="test_04_fileprocess Coverage Results" MODIFIED="1568099539545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$test_22_ys_qlc.coverage" NAME="test_22_ys_qlc Coverage Results" MODIFIED="1567767523810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$getajid.coverage" NAME="getajid Coverage Results" MODIFIED="1567737340786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datebase" />

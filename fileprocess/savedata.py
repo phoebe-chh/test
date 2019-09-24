@@ -2,7 +2,7 @@ import time
 import logging
 from common.logger import Logger
 
-logger = Logger(logger='searchresult').getlog()
+logger = Logger(logger='savadata').getlog()
 logger.setLevel(level=logging.INFO)
 
 
@@ -31,7 +31,7 @@ class SaveResultToFile:
             else:
                 if name == 'ajid':
                     self.__ajid = str
-                    f.write("存入" + name + "=" + str + "\n")
+                    f.write(name + "=" + str + "\n")
                 else:
                     f.write(name + "=" + str + "\n")
 
@@ -39,12 +39,16 @@ class SaveResultToFile:
     def readfile(self, name):
         path = "../logs/ajid.txt"
         lines = []
+        data = []
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
                 if "=" in line:
                     lines = line.strip('\n').split("=")
                     logger.info(lines)
-        return lines[1]  # 返回=号右边的内容
+                    if lines[0] == name:
+                        data.append(lines[1])
+        # logger.info(data)
+        return data[-1]  # 返回最后的name数据
 
     # # 保存结果集
     # def savedata_to_record_file(self):
@@ -80,8 +84,8 @@ class SaveResultToFile:
 
 if __name__ == '__main__':
     Q = SaveResultToFile()
-    Q.clearfile()
-    Q.writefile('ajid', '31321321321')
+    # Q.clearfile()
     # Q.writefile('ajid', '31321321321')
-    print(Q.readfile('ajid'))
+    # Q.writefile('ajid', '31321321321')
+    print(Q.readfile('ajmc'))
     # Q.savedata_to_record_file()

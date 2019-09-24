@@ -1,14 +1,14 @@
 import logging
 import time
-
 from base.selenium_driver import SeleniumDriver
 from common.logger import Logger
 from pages.ajxx_tb_page import TbAjxxPage
+from pages.ajxx_whsy_page import WshyAjxxPage
 from pages.ajxx_ycjy_page import YcjyAjxxPage
 from pages.ajxx_ys_page import YsAjxxPage
 
 logger = Logger(logger='ChooseQzcs').getlog()
-logger.setLevel(level = logging.INFO)
+logger.setLevel(level=logging.INFO)
 
 
 class StartYw(SeleniumDriver):
@@ -16,9 +16,9 @@ class StartYw(SeleniumDriver):
     案件信息页面，给嫌疑人选择强制措施
     """
 
-    def __init__(self,driver):
+    def __init__(self, driver):
         super().__init__(driver)
-        self.driver=driver
+        self.driver = driver
 
     # 发起提捕流程
     def start_tb(self):
@@ -46,6 +46,8 @@ class StartYw(SeleniumDriver):
         ycjy = YcjyAjxxPage()
         self.click(ycjy.savebutton(), 'id')  # 点击送达看守所按钮
 
-
-
-
+    # 网上换押发起
+    def start_wshy(self):
+        ycjy = WshyAjxxPage()
+        self.click(ycjy.sendbutton(), 'class')  # 点击送达看守所按钮
+        time.sleep(5)

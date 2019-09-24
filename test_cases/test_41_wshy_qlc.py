@@ -16,6 +16,7 @@ from zfxtyw.getajid import GetAjidFromUrl
 from zfxtyw.jzxt_uploadfile import UploadFile
 from zfxtyw.login import LoginPageTest
 from zfxtyw.start_yw import StartYw
+
 logger = Logger(logger='wshy-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 
@@ -65,21 +66,13 @@ class WshyTest(unittest.TestCase):
         cp = ChoosePeople(self.driver)  # 开始选择案件
         cp.find_zyry()  # 调用查找在押人员的方法
 
-    # def test_04_whsy_fill_data(self):
-    #     """进入换押案件信息页面，填写必填项"""
-    #     whsy = FillElementValue(self.driver)
-    #     whsy.fill_wshy_ajxx()  # 调用填写案件信息的方法
-    #     start = StartYw(self.driver)  # 点击送达按钮
-    #     start.save_whsy()
-    #     time.sleep(5)
-
     def test_05_jzxt_uploadfile(self):
 
         """进入卷宗系统，上传文书和卷宗"""
         zjxt = UploadFile(self.driver)
-        zjxt.enterjzxt_whsy()  # 进入文件管理页面
+        zjxt.enterjzxt_wshy()  # 进入文件管理页面
         self.switch_window(1)  # 需要切换窗口
-        zjxt.uploadfile(r"F:\2019-06\autotest\换押拘留期限通知书.pdf")
+        zjxt.uploadfile(r"F:\2019-06\autotest\换押证_GA.pdf", type=False)
         self.switch_window(0)  # 切回换押页面
         time.sleep(5)
 
@@ -92,7 +85,7 @@ class WshyTest(unittest.TestCase):
     def test_08_start_whsy(self):
         """点击换押按钮，发起换押,至此公安端页面操作结束"""
         start = StartYw(self.driver)  # 点击送达按钮
-        start.start_whsy()
+        start.start_wshy()
         time.sleep(5)
 
     def test_09_tb_save_all_data(self):
@@ -100,19 +93,19 @@ class WshyTest(unittest.TestCase):
         savedata = SaveResultToFile()
         ajid = savedata.readfile('ajid')
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
-        sql_ajcm = "SELECT  ajxx.c_ajmc  FROM db_yw.t_whsy_ajxx  ajxx WHERE c_id='%s'" % (ajid)  # 通过sql查询ajmc
+        sql_ajcm = "SELECT  ajxx.c_ajmc  FROM db_yw.t_wshy_hyxx  ajxx WHERE c_id='%s'" % (ajid)  # 通过sql查询ajmc
         ajmc = db.getdata(sql_ajcm, 0)[1]  # 执行sql
         savedata.writefile('案件名称', ajmc)
         savedata.writefile('平台案件编号', ajid)
-        sql_jcajid = "SELECT  ajxx.c_jcajid  FROM db_yw.t_whsy_ajxx  ajxx WHERE c_id='%s'" % (ajid)
+        sql_jcajid = "SELECT  ajxx.c_jcajid  FROM db_yw.t_wshy_hyxx  ajxx WHERE c_id='%s'" % (ajid)
         jcajid = db.getdata(sql_jcajid, 0)[1]  # 执行sql
         savedata.writefile('平台案件关联编号', jcajid)
-        sql_jsdw = "SELECT corp.c_alias alise_js FROM db_yw.t_whsy_ajxx ajxx JOIN db_uim.t_aty_corp corp " \
-                   "ON ajxx.c_sskss = corp.c_id WHERE ajxx.c_id =  '%s' " % (ajid)
+        sql_jsdw = "SELECT corp.c_alias alise_js FROM db_yw.t_wshy_hyxx ajxx JOIN db_uim.t_aty_corp corp " \
+                   "ON ajxx.c_ysdw = corp.c_id WHERE ajxx.c_id =  '%s' " % (ajid)
         jsdw = db.getdata(sql_jsdw, 0)[1]  # 执行sql
         savedata.writefile('接收单位编号', jsdw)
-        sql_fsdw = "SELECT corp.c_alias alise_fs FROM db_yw.t_whsy_ajxx ajxx JOIN " \
-                   "db_uim.t_aty_corp corp ON ajxx.c_xtfqdw = corp.c_id WHERE ajxx.c_id = '%s'" % (ajid)
+        sql_fsdw = "SELECT corp.c_alias alise_fs FROM db_yw.t_wshy_hyxx ajxx JOIN " \
+                   "db_uim.t_aty_corp corp ON ajxx.c_jsdw = corp.c_id WHERE ajxx.c_id = '%s'" % (ajid)
         fsdw = db.getdata(sql_fsdw, 0)[1]
         savedata.writefile('发送单位编号', fsdw)
 
@@ -130,10 +123,11 @@ if __name__ == '__main__':
     testunit.addTest(WshyTest('test_02_enter_whsy_ajlist'))  # 添加测试用例方法名
     testunit.addTest(WshyTest('test_03_whsy_addaj'))  # 添加测试用例方法名
     # testunit.addTest(WshyTest('test_04_whsy_fill_data'))
-    # testunit.addTest(WshyTest('test_05_jzxt_uploadfile'))
-    # testunit.addTest(WshyTest('test_06_get_ajid'))
-    # testunit.addTest(WshyTest('test_08_start_whsy'))
-    # testunit.addTest(WshyTest('test_09_tb_save_all_data'))
+    testunit.addTest(WshyTest('test_05_jzxt_uploadfile'))
+    testunit.addTest(WshyTest('test_06_get_ajid'))
+    # testunit.addTest(WshyTest('test_07_set_qzzt'))
+    testunit.addTest(WshyTest('test_08_start_whsy'))
+    testunit.addTest(WshyTest('test_09_tb_save_all_data'))
     runer = unittest.TextTestRunner(verbosity=2)
     runer.run(testunit)
     # # #
