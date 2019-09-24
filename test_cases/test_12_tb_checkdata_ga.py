@@ -15,7 +15,7 @@ class CheckDataTest(unittest.TestCase):
     """
 
     def test_01_check_xtzt_ajid(self):
-        '''根据ajid查询当前案件状态是否正确(n_tbxtzt=102)'''
+        """根据ajid查询当前案件状态是否正确(n_tbxtzt=102)"""
         db = DataBase('ga')
         savedata = SaveResultToFile()
         ajid = savedata.readfile('ajid')

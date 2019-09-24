@@ -4,14 +4,9 @@
     <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/ajid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ajid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_02_ys_qlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_01_tb_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_01_tb_qlc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_cases/test_03_tb_checkdata_ga.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_03_tb_checkdata_ga.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_04_fileprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_04_fileprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_05_tb_interfacetest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_05_tb_interfacetest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_06_tb_login_zf.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_06_tb_login_zf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_11_tb_login_ga.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_11_tb_login_ga.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_22_fill_in_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_22_fill_in_elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_41_wshy_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_41_wshy_qlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -238,7 +233,7 @@
       <workItem from="1568108744735" duration="2784000" />
       <workItem from="1568118553753" duration="12981000" />
       <workItem from="1568944778863" duration="45232000" />
-      <workItem from="1569289722524" duration="7092000" />
+      <workItem from="1569289722524" duration="8243000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -394,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569297230688</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="2019-09-24 13:56">
+      <created>1569304601917</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1569304601917</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -441,7 +443,8 @@
     <MESSAGE value="2019-09-23:9:30" />
     <MESSAGE value="2019-09-23 11:03" />
     <MESSAGE value="2019-09-24 11:53" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-09-24 11:53" />
+    <MESSAGE value="2019-09-24 13:56" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-24 13:56" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

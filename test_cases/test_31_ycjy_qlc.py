@@ -16,7 +16,6 @@ from zfxtyw.getajid import GetAjidFromUrl
 from zfxtyw.jzxt_uploadfile import UploadFile
 from zfxtyw.login import LoginPageTest
 from zfxtyw.start_yw import StartYw
-
 logger = Logger(logger='ys-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 
@@ -54,7 +53,6 @@ class YcjyTest(unittest.TestCase):
             logger.info("进入延长羁押业务成功")
         except Exception as e:
             logger.info("进入延长羁押业务失败，抛出异常:%s" % e)
-        # time.sleep(3)
 
     def test_03_ycjy_addaj(self):
 
