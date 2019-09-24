@@ -15,7 +15,7 @@ class InterfaceTest(unittest.TestCase):
     调用接口，验证接口是否调用成功
     """
     def test_01_call_zf_interface(self):
-        '''调用政法端的接口，验证接口是否调用成功'''
+        """调用政法端的接口，验证接口是否调用成功"""
         # 验证返回结果是否是200,调用接口后停20s
         f = ZfxtInterface()
         result = f.post_main(104,'zf')
@@ -24,7 +24,7 @@ class InterfaceTest(unittest.TestCase):
         time.sleep(20)
 
     def test_02_assert_interface_result(self):
-        '''验证调用接口后，协同状态是否变成104'''
+        """验证调用接口后，协同状态是否变成104"""
         # 连接数据库
         db=DataBase('ga')
         savedata = SaveResultToFile()

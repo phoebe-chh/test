@@ -16,7 +16,6 @@ from zfxtyw.getajid import GetAjidFromUrl
 from zfxtyw.jzxt_uploadfile import UploadFile
 from zfxtyw.login import LoginPageTest
 from zfxtyw.start_yw import StartYw
-
 logger = Logger(logger='wshy-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 

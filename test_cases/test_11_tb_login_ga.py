@@ -12,7 +12,7 @@ class LoginTest(unittest.TestCase):
         cls.driver = browser.open_browser(browser, 'zf')
 
     def test_01_login_zfxt_ga(self):
-        '''登陆政法端，查看页面展示和数据库中字段是否对应'''
+        """登陆政法端，查看页面展示和数据库中字段是否对应"""
         loginpage = LoginPageTest(self.driver)
         loginpage.login()  # 使用登陆方法
         po = ElemnetExist(self.driver)
