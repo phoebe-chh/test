@@ -1,6 +1,5 @@
 import unittest
 import logging
-
 from datebase.database import DataBase
 from fileprocess.savedata import SaveResultToFile
 from common.logger import Logger

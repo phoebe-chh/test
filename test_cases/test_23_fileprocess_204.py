@@ -6,7 +6,6 @@ from fileprocess.replacefilecontent import ReplaceFileContent
 from fileprocess.zipallfile import ZipAllFile
 import logging
 from common.logger import Logger
-
 logger = Logger(logger='fileprocesstest').getlog()
 logger.setLevel(level=logging.INFO)
 
