@@ -36,7 +36,7 @@ class FileProcess(unittest.TestCase):
         """放在服务器路径上"""
         f = PutOnService('ga')
         f.putto_server('104')  # 推送压缩包，参数为流程编号
-        time.sleep(20)  # 等待系统处理
+        time.sleep(5)  # 等待系统处理
 
 
 if __name__ == '__main__':

@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_cases/test_13_fileprocess_104.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_cases/test_17_104_106_filepro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_cases/test_18_interf_106.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_11_tb_login_ga.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_11_tb_login_ga.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datebase/updateqzzt.py" beforeDir="false" afterPath="$PROJECT_DIR$/datebase/updateqzzt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/encryption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/putonserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/putonserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/replacefilecontent.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/replacefilecontent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/savedata.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/savedata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocess/zipallfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/zipallfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ajid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ajid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/record.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/record.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/run_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/run_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_11_tb_login_ga.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_tb_login_ga.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_cases/test_11_tb_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_11_tb_qlc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_cases/test_12_tb_checkdata_ga.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_12_tb_checkdata_ga.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_13_fileprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_23_fileprocess_204.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_13_fileprocess_104.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_13_fileprocess_104.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_14_tb_interfacetest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_14_tb_interf_104.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_15_tb_login_zf.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_15_tb_login_zf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_21_ys_qlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_21_ys_qlc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,52 +94,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_41_wshy_qlc">
-    <configuration name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="autotest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/run_all.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="autotest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/runner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="savedata" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test_17_104_106_filepro">
+    <configuration name="putonserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,7 +108,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileprocess/savedata.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileprocess/putonserver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,7 +117,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_31_ycjy_qlc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="replacefilecontent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autotest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fileprocess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileprocess/replacefilecontent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_13_fileprocess_104" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +152,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/test_13_fileprocess_104.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_41_wshy_qlc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_14_tb_interfacetest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,7 +174,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/test_41_wshy_qlc.py" />
+      <option name="SCRIPT_NAME" value="E:\myclone\test_cases\test_14_tb_interf_104.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_17_104_106_filepro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autotest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/test_17_104_106_filepro.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,19 +206,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.run_all" />
-      <item itemvalue="Python.runner" />
-      <item itemvalue="Python.test_31_ycjy_qlc" />
-      <item itemvalue="Python.test_41_wshy_qlc" />
-      <item itemvalue="Python.savedata" />
+      <item itemvalue="Python.test_14_tb_interfacetest" />
+      <item itemvalue="Python.test_13_fileprocess_104" />
+      <item itemvalue="Python.putonserver" />
+      <item itemvalue="Python.test_17_104_106_filepro" />
+      <item itemvalue="Python.replacefilecontent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_41_wshy_qlc" />
-        <item itemvalue="Python.savedata" />
-        <item itemvalue="Python.run_all" />
-        <item itemvalue="Python.runner" />
-        <item itemvalue="Python.test_31_ycjy_qlc" />
+        <item itemvalue="Python.test_17_104_106_filepro" />
+        <item itemvalue="Python.replacefilecontent" />
+        <item itemvalue="Python.test_14_tb_interfacetest" />
+        <item itemvalue="Python.test_13_fileprocess_104" />
+        <item itemvalue="Python.putonserver" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +248,7 @@
       <workItem from="1568108744735" duration="2784000" />
       <workItem from="1568118553753" duration="12981000" />
       <workItem from="1568944778863" duration="45232000" />
-      <workItem from="1569289722524" duration="9191000" />
+      <workItem from="1569289722524" duration="23393000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -404,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569305892188</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="2019-09-24 14:31">
+      <created>1569306699918</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1569306699918</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -453,7 +474,8 @@
     <MESSAGE value="2019-09-24 11:53" />
     <MESSAGE value="2019-09-24 13:56" />
     <MESSAGE value="2019-09-24 14:48" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-09-24 14:48" />
+    <MESSAGE value="2019-09-24 14:31" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-24 14:31" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -466,25 +488,34 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/myclone$test_11_tb_qlc.coverage" NAME="test_11_tb_qlc Coverage Results" MODIFIED="1569310904513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/autotest$logintest.coverage" NAME="logintest Coverage Results" MODIFIED="1567656828451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$test_13_fileprocess_104.coverage" NAME="test_13_fileprocess_104 Coverage Results" MODIFIED="1569314311630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/autotest$replacefilecontent.coverage" NAME="replacefilecontent Coverage Results" MODIFIED="1568094245507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
+    <SUITE FILE_PATH="coverage/autotest$encryption.coverage" NAME="encryption Coverage Results" MODIFIED="1568095352830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
+    <SUITE FILE_PATH="coverage/myclone$runner.coverage" NAME="runner Coverage Results" MODIFIED="1569148202494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$test_14_tb_interfacetest.coverage" NAME="test_14_tb_interfacetest Coverage Results" MODIFIED="1569314415006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$test_41_wshy_qlc.coverage" NAME="test_41_wshy_qlc Coverage Results" MODIFIED="1569302880134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$post.coverage" NAME="post Coverage Results" MODIFIED="1569308976008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/autotest$getajid.coverage" NAME="getajid Coverage Results" MODIFIED="1567737340786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datebase" />
+    <SUITE FILE_PATH="coverage/myclone$test_12_tb_checkdata_ga.coverage" NAME="test_12_tb_checkdata_ga Coverage Results" MODIFIED="1569311057742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1569311247422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$post.coverage" NAME="post Coverage Results" MODIFIED="1568091407842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/myclone$savedata.coverage" NAME="savedata Coverage Results" MODIFIED="1569297155945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
-    <SUITE FILE_PATH="coverage/autotest$logintest.coverage" NAME="logintest Coverage Results" MODIFIED="1567656828451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$test_17_104_106_filepro.coverage" NAME="test_17_104_106_filepro Coverage Results" MODIFIED="1569323216292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$putonserver.coverage" NAME="putonserver Coverage Results" MODIFIED="1568099468545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1568106034160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/myclone$test_31_ycjy_qlc.coverage" NAME="test_31_ycjy_qlc Coverage Results" MODIFIED="1568974409509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/myclone$test_02_ys_qlc.coverage" NAME="test_02_ys_qlc Coverage Results" MODIFIED="1568949145372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/autotest$replacefilecontent.coverage" NAME="replacefilecontent Coverage Results" MODIFIED="1568094245507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
-    <SUITE FILE_PATH="coverage/autotest$encryption.coverage" NAME="encryption Coverage Results" MODIFIED="1568095352830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
-    <SUITE FILE_PATH="coverage/myclone$runner.coverage" NAME="runner Coverage Results" MODIFIED="1569148202494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$putonserver.coverage" NAME="putonserver Coverage Results" MODIFIED="1569314177617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
+    <SUITE FILE_PATH="coverage/myclone$encryption.coverage" NAME="encryption Coverage Results" MODIFIED="1569313724484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$zipallfile.coverage" NAME="zipallfile Coverage Results" MODIFIED="1568094910210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$savedata.coverage" NAME="savedata Coverage Results" MODIFIED="1567762887531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$runner.coverage" NAME="runner Coverage Results" MODIFIED="1568112998658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/myclone$test_41_wshy_qlc.coverage" NAME="test_41_wshy_qlc Coverage Results" MODIFIED="1569302880134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$replacefilecontent.coverage" NAME="replacefilecontent Coverage Results" MODIFIED="1569322901837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/autotest$test_04_fileprocess.coverage" NAME="test_04_fileprocess Coverage Results" MODIFIED="1568099539545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$test_22_ys_qlc.coverage" NAME="test_22_ys_qlc Coverage Results" MODIFIED="1567767523810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/autotest$getajid.coverage" NAME="getajid Coverage Results" MODIFIED="1567737340786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datebase" />
     <SUITE FILE_PATH="coverage/autotest$temp.coverage" NAME="temp Coverage Results" MODIFIED="1567673442507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/myclone$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1569148397705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
   </component>
   <component name="masterDetails">
     <states>

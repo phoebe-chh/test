@@ -20,20 +20,20 @@ class SaveResultToFile:
             pass
 
     # 写入字符串到文件中，保存时用=分开
-    def writefile(self, name, str):
-        logger.info("保存结果到logs/ajid.txt")
-        path = "../logs/ajid.txt"
+    def writefile(self, name, strname):
+        logger.info("保存结果到logs/record.txt")
+        path = "../logs/ajid.txt"  # 写入文件
         with open(path, "a", encoding="utf-8") as f:
             rq = time.strftime('%Y-%m-%d-%H-%M', time.localtime(time.time()))
             f.write("当前时间" + rq + "\n")
-            if len(str) == 0:
+            if len(str(strname)) == 0:
                 logger.info("请不要保存空字符串到文件中")
             else:
                 if name == 'ajid':
                     self.__ajid = str
-                    f.write(name + "=" + str + "\n")
+                    f.write(str(name) + "=" + str(strname) + "\n")
                 else:
-                    f.write(name + "=" + str + "\n")
+                    f.write(str(name) + "=" + str(strname) + "\n")
 
     # 读取文件内容，传入数据标识，通过=号进行区分，返回=号后面内容
     def readfile(self, name):

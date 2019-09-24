@@ -3,7 +3,7 @@ from base.browser_driver import BrowserDriver
 from common.elementexist import ElemnetExist
 from datebase.database import DataBase
 from fileprocess.savedata import SaveResultToFile
-from zfxtyw.addaj import AddTbAJ
+from zfxtyw.addaj import AddAJ
 from zfxtyw.choose_qzcs_type import ChooseQzcs
 from zfxtyw.choose_supect import ChoosePeople
 from pages.home_page import *
@@ -56,8 +56,8 @@ class YsTest(unittest.TestCase):
     def test_03_tb_addtbaj(self):
 
         """点击选择案件，进入提案器"""
-        choosepeople = AddTbAJ(self.driver)
-        choosepeople.addtbaj()  # 点击添加案件按钮
+        choosepeople = AddAJ(self.driver)
+        choosepeople.add_tb_aj() # 点击添加案件按钮
         iframe2 = self.driver.find_elements_by_tag_name("iframe")[0]
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")

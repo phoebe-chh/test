@@ -1,11 +1,13 @@
-#coding:utf-8
+# coding:utf-8
+import os
 import xml.dom.minidom
 import logging
 
 from common.readconfig import ReadConfig
 from common.logger import Logger
+
 logger = Logger(logger='repleace-file').getlog()
-logger.setLevel(level = logging.INFO)
+logger.setLevel(level=logging.INFO)
 
 
 class ReplaceFileContent:
@@ -21,13 +23,25 @@ class ReplaceFileContent:
         with open(now_file_path, "r", encoding="utf-8") as f:
             for line in f:
                 if "=" in line:
-                    lines=line.strip('\n').split("=")
+                    lines = line.strip('\n').split("=")
                     nodename.append(lines[0])
         return nodename
+
     # 从ini文件中读取本地文件的路径
     def get_file_path(self):
-        cg=ReadConfig()
-        return cg.getvalue('localPath','path')
+        cg = ReadConfig()
+        return cg.getvalue('localPath', 'path')
+
+    # 106流程中修改pdf文件名称
+    def rename_pdf(self, xtbh, xyrxm):
+        cg = ReadConfig()
+        pdfpath = cg.getvalue('localPath', 'path') + '\\' + str(xtbh) + "\ws" + '\\'
+        for file in os.listdir(pdfpath):
+            filename = file.split('.')
+            name = filename[0]
+            fileNew = name[0:7] + "(" + xyrxm + ")" + "." + filename[1]
+            if fileNew != file:
+                os.rename(pdfpath + file, pdfpath + fileNew)
 
     def getnodecontent(self):
         logger.info("找到record.txt文件中需要替换的节点内容")
@@ -40,14 +54,13 @@ class ReplaceFileContent:
                     nodecontent.append(lines[1])
         return nodecontent
 
-    def replace_content(self,xtbh):
+    def replace_content(self, xtbh):
         oldcontent = self.getnodename()
-        logger.info("需要替换的节点为%s"%oldcontent)
+        logger.info("需要替换的节点为%s" % oldcontent)
         newcontent = self.getnodecontent()
         logger.info("需要替换成%s" % newcontent)
         logger.info("找到ajxx.xml的路径")
-        # xmlpath = "../xmls/ajxx.xml"
-        xmlpath=self.get_file_path() +'/'+str(xtbh)+"/"+"ajxx.xml" # 从配置文件中读取的文件路径
+        xmlpath = self.get_file_path() + '/' + str(xtbh) + "/" + "ajxx.xml"  # 从配置文件中读取的文件路径
         xmlobject = open(xmlpath, 'r', encoding='UTF-8')
         DOMTree = xml.dom.minidom.parse(xmlobject)
         root = DOMTree.documentElement
@@ -76,9 +89,10 @@ class ReplaceFileContent:
 
 
 if __name__ == "__main__":
-    f=ReplaceFileContent()
-    print(f.getnodename())
-    print(f.getnodecontent())
+    f = ReplaceFileContent()
+    # print(f.getnodename())
+    # print(f.getnodecontent())
     # f.getnodecontent()
-    xmlp=f.replace_content(204)
+    # xmlp = f.replace_content(204)
+    f.rename_pdf(106, "嘿嘿")
     # f.copyfile(r"C:\Users\lenovo\Desktop\kkk\test\TB\104")

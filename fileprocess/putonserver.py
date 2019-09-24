@@ -49,7 +49,7 @@ class PutOnService:
     # 推送文件
     def putto_server(self,xtbh):
         cg = ReadConfig()
-        localpath = cg.getvalue('localPath', 'path') + '\\' + str(xtbh)+'.zip'
+        localpath = cg.getvalue('localPath', 'path') + '\\after_jiami'+'\\'+str(xtbh)+'.zip'
         logger.info("本地文件路径{}".format(localpath))
         servicepath='/home/ftp'+cg.getvalue('servicefilepath', 'filepath') + '/' + str(xtbh)+'.zip'
         logger.info("ftp服务器路径{}".format(servicepath))
@@ -66,5 +66,5 @@ if __name__ == "__main__":
     # servicepath="/home/ftp/autotest/104.zip"
     # localpath=r"C:\Users\lenovo\Desktop\kkk\test\TB\after_jiami\104.zip"
     f=PutOnService('zf')
-    f.putto_server(204)
+    f.putto_server(104)
     # f.link_server()

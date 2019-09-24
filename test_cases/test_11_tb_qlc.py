@@ -13,9 +13,11 @@ import logging
 from common.logger import Logger
 from zfxtyw.chooseywname import ChooseXtName
 from zfxtyw.fill_ajxx import FillElementValue
+from zfxtyw.getajid import GetAjidFromUrl
 from zfxtyw.jzxt_uploadfile import UploadFile
 from zfxtyw.login import LoginPageTest
 from zfxtyw.start_yw import StartYw
+
 logger = Logger(logger='tb-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 
@@ -91,14 +93,21 @@ class TbTest(unittest.TestCase):
         zjxt.uploadjz(r"F:\2019-06\autotest\jz01.jpg")  # 上传卷宗方法
         self.switch_window(0)  # 切回提捕页面
 
+    def test_06_get_ajid(self):
+        """从页面url获取ajid，并保存到文件中"""
+        ajid = GetAjidFromUrl(self.driver).getajidfromurl(1)
+        sa = SaveResultToFile()
+        sa.writefile('ajid', ajid)  # 获取页面ajid并写入文件
+
     def test_07_set_qzzt(self):
 
         """设置签章状态为1，通过ajid查询数据库，设置n_yqz=1"""
-
-        f = UpdateQzzt()
-        logger.info("获取案件id，设置数据库中该案件的签章状态")
-        f.update_qzzt()  # 过ajid，update签章状态
-        time.sleep(5)
+        # 设置签章状态的sql
+        ajid = SaveResultToFile().readfile('ajid')
+        sql = "update db_jz.t_jzgl_wj set n_yqz =1 WHERE c_ywid='%s' and c_store_path is not null" % (ajid)
+        # 链接数据库执行sql
+        db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
+        db.exe_update(sql)  # 执行sql
 
     def test_08_tb_gotibu(self):
         """点击提捕按钮，发起提捕,至此公安端页面操作结束"""
@@ -112,6 +121,7 @@ class TbTest(unittest.TestCase):
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""
         savedata = SaveResultToFile()
         ajid = savedata.readfile('ajid')
+        savedata.clearfile()  # 清除之前的测试数据
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
         sql_ajcm = "SELECT  ajxx.c_ajmc  FROM db_yw.t_tb_ajxx  ajxx WHERE c_id='%s'" % (ajid)  # 通过sql查询ajmc
         ajmc = db.getdata(sql_ajcm, 0)[1]  # 执行sql
@@ -125,7 +135,7 @@ class TbTest(unittest.TestCase):
         jsdw = db.getdata(sql_jsdw, 0)[1]  # 执行sql
         savedata.writefile('接收单位编号', jsdw)
         sql_fsdw = "SELECT corp.c_alias alise_fs FROM db_yw.t_tb_ajxx ajxx JOIN " \
-                   "db_uim.t_aty_corp corp ON ajxx.c_gaysdw = corp.c_id WHERE ajxx.c_id = '%s'" % (ajid)
+                   "db_uim.t_aty_corp corp ON ajxx.c_gajysdw = corp.c_id WHERE ajxx.c_id = '%s'" % (ajid)
         fsdw = db.getdata(sql_fsdw, 0)[1]
         savedata.writefile('发送单位编号', fsdw)
 
@@ -136,20 +146,20 @@ class TbTest(unittest.TestCase):
 
 if __name__ == '__main__':
     # 运行所有
-    # unittest.main(verbosity=2)
+    unittest.main(verbosity=2)
     # 运行单个用例
-    testunit = unittest.TestSuite()
-    testunit.addTest(TbTest('test_01_login'))  # 添加测试用例方法名
-    # # testunit.addTest(TbTest('test_02_enter_tb_ajlist'))
-    # # testunit.addTest(TbTest('test_03_tb_addtbaj'))
-    # # testunit.addTest(TbTest('test_04_fill_in_value'))
-    # # testunit.addTest(TbTest('test_05_tb_chooseqzcs'))
-    # # testunit.addTest(TbTest('test_07_set_qzzt'))
-    # # testunit.addTest(TbTest('test_09_tb_save_all_data'))
-    # testunit.addTest(TbTest('test_08_tb_gotibu'))
-    # # # test_09_tb_save_all_data
+    # testunit = unittest.TestSuite()
+    # testunit.addTest(TbTest('test_01_login'))  # 添加测试用例方法名
+    # # # testunit.addTest(TbTest('test_02_enter_tb_ajlist'))
+    # # # testunit.addTest(TbTest('test_03_tb_addtbaj'))
+    # # # testunit.addTest(TbTest('test_04_fill_in_value'))
+    # # # testunit.addTest(TbTest('test_05_tb_chooseqzcs'))
     # # # testunit.addTest(TbTest('test_07_set_qzzt'))
-    # # # # # test_05_jzxt_uploadfile
-    runer = unittest.TextTestRunner(verbosity=2)
-    runer.run(testunit)
-    # #
+    # # # testunit.addTest(TbTest('test_09_tb_save_all_data'))
+    # # testunit.addTest(TbTest('test_08_tb_gotibu'))
+    # # # # test_09_tb_save_all_data
+    # # # # testunit.addTest(TbTest('test_07_set_qzzt'))
+    # # # # # # test_05_jzxt_uploadfile
+    # runer = unittest.TextTestRunner(verbosity=2)
+    # runer.run(testunit)
+    # # #
