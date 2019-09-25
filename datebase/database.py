@@ -52,7 +52,7 @@ class DataBase:
         except Exception as e:
             logger.info("关闭失败，异常信息：%s" % e)
 
-    # 通过sql，查询数据库，输出数据
+    # 通过sql，查询数据库，输出数据,返回查询的结果有两个，0是查询的字段名称，1是查询的数据值
     def getdata(self,sql,*number):
         rows=[]
         all_fields=[]

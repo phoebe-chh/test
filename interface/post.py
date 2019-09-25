@@ -6,7 +6,6 @@ import json
 from common.logger import Logger
 import uuid
 import logging
-
 logger = Logger(logger='callinterface').getlog()
 logger.setLevel(level=logging.INFO)
 

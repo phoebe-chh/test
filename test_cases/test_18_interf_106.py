@@ -6,7 +6,7 @@ from fileprocess.savedata import SaveResultToFile
 from interface.post import ZfxtInterface
 from common.logger import Logger
 
-logger = Logger(logger='callinterfacetest').getlog()
+logger = Logger(logger='callinterface-106').getlog()
 logger.setLevel(level=logging.INFO)
 
 
@@ -20,9 +20,8 @@ class InterfaceTest(unittest.TestCase):
         # 验证返回结果是否是200,调用接口后停20s
         f = ZfxtInterface()
         result = f.post_main(106, 'zf')
-        # 判断接口返回的状态码是否是200
-        self.assertEqual(200, result)
-        time.sleep(20)
+        self.assertEqual(200, result)  # 判断接口返回的状态码是否是200
+        time.sleep(40)  # 给系统处理包的时间
 
     def test_02_assert_interface_result(self):
         """验证调用接口后，协同状态是否变成106"""
@@ -33,11 +32,12 @@ class InterfaceTest(unittest.TestCase):
         sql = "SELECT n_tbxtzt  FROM db_yw.t_tb_ajxx WHERE c_id LIKE '%s'" % (ajid)
         xtzt = db.getdata(sql, 0)[1]
         logger.info("查询到的协同状态：%s" % xtzt)
-        try:
-            self.assertEqual(106, xtzt)
-            logger.info('协同状态对比成功，当前协同状态%s' % xtzt)
-        except Exception as e:
-            logger.error('协同状态对比出错，错误信息：%s' % e)
+        self.assertEqual(106, xtzt)
+        # try:
+        #     self.assertEqual(106, xtzt)
+        #     logger.info('协同状态对比成功，当前协同状态%s' % xtzt)
+        # except Exception as e:
+        #     logger.error('协同状态对比出错，错误信息：%s' % e)
 
 
 if __name__ == '__main__':

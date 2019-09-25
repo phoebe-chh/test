@@ -1,6 +1,8 @@
 import time
 import unittest
 
+import jpype
+
 from datebase.database import DataBase
 
 from fileprocess.savedata import SaveResultToFile
@@ -38,24 +40,26 @@ class FileProcess(unittest.TestCase):
         xyrxm = savedata.readfile('嫌疑人姓名')
         rn.rename_pdf (106,xyrxm)
 
-    def test_02_replace_xml(self):
+    def test_03_replace_xml(self):
         """替换xml文件内容并生成新xml"""
         f = ReplaceFileContent()
         f.getnodename()  # 从record.txt中获取替换节点名称
         f.getnodecontent()  # 从record.txt获取替换节点内容
         f.replace_content('106')  # 替换的xml文件，参数为流程编号
 
-    def test_03_file_zip(self):
+    def test_04_file_zip(self):
         """压缩某个文件夹下的文件，生成zip包"""
         z = ZipAllFile()
         z.zip_file(106)  # 压缩文件，参数为流程编号
 
-    def test_04_encryption_zip(self):
+    def test_05_encryption_zip(self):
         """加密压缩包"""
         f = Encryption()
         f.encryption_zip(106)  # 加密压缩包，参数为流程编号
+        # 最后关闭jvm
+        jpype.shutdownJVM()
 
-    def test_05_put_on_server(self):
+    def test_06_put_on_server(self):
         """放在服务器路径上"""
         f = PutOnService('ga')
         f.putto_server('106')  # 推送压缩包，参数为流程编号
