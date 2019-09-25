@@ -1,7 +1,6 @@
 import logging
 import os
 import time
-
 from base.selenium_driver import SeleniumDriver
 from common.logger import Logger
 from pages.ajxx_tb_page import TbAjxxPage
@@ -60,7 +59,7 @@ class UploadFile(SeleniumDriver):
         logger.info(str)
         os.popen(str)
         time.sleep(5)
-        if type == True: # 若需要在上传文件后选择文件类型，则传入的参数可默认不传，若不需要选择文书类型，则设置为False
+        if type == True:  # 若需要在上传文件后选择文件类型，则传入的参数可默认不传，若不需要选择文书类型，则设置为False
             all_input = self.driver.find_elements_by_tag_name("input")
             all_input[0].click()
             self.driver.switch_to.default_content()

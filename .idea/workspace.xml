@@ -2,28 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0676a58-31b3-4d1b-b2d0-a4d338a19a3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/201909251119.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251120.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251123.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251325.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251403.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251406.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251407.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251419.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251421.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/201909251424.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_reports/2019-09-25-11_23_49report_example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_reports/2019-09-25-13_25_11report_example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_reports/2019-09-25-14_07_56report_example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/201909251428.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_reports/2019-09-25-14_28_19report_example.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileprocess/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocess/encryption.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/ajid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ajid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_12_tb_checkdata_ga.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_12_tb_checkdata_ga.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_13_fileprocess_104.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_13_fileprocess_104.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_14_tb_interf_104.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_14_tb_interf_104.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_17_104_106_filepro.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_17_104_106_filepro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/test_18_interf_106.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_18_interf_106.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/choose_qzcs_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/choose_qzcs_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/choose_supect.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/choose_supect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/chooseywname.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/chooseywname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/fill_ajxx.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/fill_ajxx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/getajid.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/getajid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/jzxt_uploadfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfxtyw/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfxtyw/login.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.encryption">
+  <component name="RunManager" selected="Python.run_all">
     <configuration name="encryption" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,11 +209,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_all" />
         <item itemvalue="Python.encryption" />
         <item itemvalue="Python.runner" />
         <item itemvalue="Python.test_17_104_106_filepro (1)" />
         <item itemvalue="Python.test_13_fileprocess_104" />
-        <item itemvalue="Python.run_all" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +244,7 @@
       <workItem from="1568118553753" duration="12981000" />
       <workItem from="1568944778863" duration="45232000" />
       <workItem from="1569289722524" duration="25893000" />
-      <workItem from="1569376316062" duration="8663000" />
+      <workItem from="1569376316062" duration="9476000" />
     </task>
     <task id="LOCAL-00001" summary="deltet">
       <created>1568118921747</created>
@@ -446,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569379312296</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="2019-09-25 14:28">
+      <created>1569392888217</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1569392888217</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -499,7 +495,8 @@
     <MESSAGE value="2019-09-24 14:31" />
     <MESSAGE value="2019-09-24 19:07" />
     <MESSAGE value="2019-09-25 10:40" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-09-25 10:40" />
+    <MESSAGE value="2019-09-25 14:28" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-09-25 14:28" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -507,6 +504,10 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_cases/test_31_ycjy_qlc.py</url>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zfxtyw/login.py</url>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -524,7 +525,7 @@
     <SUITE FILE_PATH="coverage/autotest$getajid.coverage" NAME="getajid Coverage Results" MODIFIED="1567737340786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datebase" />
     <SUITE FILE_PATH="coverage/myclone$test_12_tb_checkdata_ga.coverage" NAME="test_12_tb_checkdata_ga Coverage Results" MODIFIED="1569311057742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/myclone$test_18_interf_106.coverage" NAME="test_18_interf_106 Coverage Results" MODIFIED="1569380988298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/myclone$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1569381829740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/myclone$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1569392898773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/autotest$post.coverage" NAME="post Coverage Results" MODIFIED="1568091407842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/myclone$savedata.coverage" NAME="savedata Coverage Results" MODIFIED="1569297155945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fileprocess" />
     <SUITE FILE_PATH="coverage/myclone$test_17_104_106_filepro.coverage" NAME="test_17_104_106_filepro Coverage Results" MODIFIED="1569381816969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />

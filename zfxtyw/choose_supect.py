@@ -1,8 +1,6 @@
 import logging
 import time
-
 from selenium.webdriver.common.action_chains import ActionChains
-
 from base.selenium_driver import SeleniumDriver
 from common.logger import Logger
 from pages.taq_tb_page import TbTaq
