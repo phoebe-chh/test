@@ -7,7 +7,7 @@ from fileprocess.savedata import SaveResultToFile
 from interface.post import ZfxtInterface
 from common.logger import Logger
 
-logger = Logger(logger='callinterfacetest').getlog()
+logger = Logger(logger='interface-104').getlog()
 logger.setLevel(level=logging.INFO)
 
 
@@ -36,11 +36,6 @@ class InterfaceTest(unittest.TestCase):
         logger.info("查询到的协同状态：%s" % xtzt)
         self.assertEqual(104, xtzt)
 
-        # try:
-        #     self.assertEqual(104, xtzt)
-        #     logger.info('协同状态对比成功，当前协同状态%s' % xtzt)
-        # except Exception as e:
-        #     logger.error('协同状态对比出错，错误信息：%s' % e)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

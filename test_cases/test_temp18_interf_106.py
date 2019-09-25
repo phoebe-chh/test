@@ -33,11 +33,6 @@ class InterfaceTest(unittest.TestCase):
         xtzt = db.getdata(sql, 0)[1]
         logger.info("查询到的协同状态：%s" % xtzt)
         self.assertEqual(106, xtzt)
-        # try:
-        #     self.assertEqual(106, xtzt)
-        #     logger.info('协同状态对比成功，当前协同状态%s' % xtzt)
-        # except Exception as e:
-        #     logger.error('协同状态对比出错，错误信息：%s' % e)
 
 
 if __name__ == '__main__':

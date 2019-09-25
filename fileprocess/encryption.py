@@ -1,12 +1,13 @@
-#coding:utf-8
+# coding:utf-8
 import os
 import jpype
 import logging
 
 from common.readconfig import ReadConfig
 from common.logger import Logger
+
 logger = Logger(logger='encryption').getlog()
-logger.setLevel(level = logging.INFO)
+logger.setLevel(level=logging.INFO)
 
 
 class Encryption:
@@ -14,9 +15,10 @@ class Encryption:
     加密文件类
     参数：加密文件路径
     """
-    def encryption_zip(self,xtbh):
+
+    def encryption_zip(self, xtbh):
         cg = ReadConfig()
-        zippath = cg.getvalue('localPath', 'path') + '\\' + str(xtbh)+'.zip'
+        zippath = cg.getvalue('localPath', 'path') + '\\' + str(xtbh) + '.zip'
         logger.info(zippath)
         if os.path.exists(zippath):
             logger.info('压缩包存在，开始加密')
@@ -35,11 +37,13 @@ class Encryption:
             logger.info("加密后文件存放路径：%s" % zip_path_after)
         else:
             logger.info('压缩包不存在，无法加密')
-        jpype.shutdownJVM()  # 最后关闭jvm
+
+    # def closJvm(self):
+    #     jpype.shutdownJVM()  # 最后关闭jvm
 
 
 if __name__ == "__main__":
-    f=Encryption()
+    f = Encryption()
     f.encryption_zip(104)
     # zippath = r"C:\Users\lenovo\Desktop\kkk\test\TB\104.zip"
     # f.encryption_zip(zippath)

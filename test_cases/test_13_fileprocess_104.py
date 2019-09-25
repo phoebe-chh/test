@@ -1,5 +1,8 @@
 import time
 import unittest
+
+import jpype
+
 from fileprocess.encryption import Encryption
 from fileprocess.putonserver import PutOnService
 from fileprocess.replacefilecontent import ReplaceFileContent

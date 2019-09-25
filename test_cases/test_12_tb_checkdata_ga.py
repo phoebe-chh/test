@@ -4,7 +4,7 @@ from datebase.database import DataBase
 from fileprocess.savedata import SaveResultToFile
 from common.logger import Logger
 
-logger = Logger(logger='checkdatatest').getlog()
+logger = Logger(logger='checkdatatest-102').getlog()
 logger.setLevel(level=logging.INFO)
 
 

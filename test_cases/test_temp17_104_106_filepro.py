@@ -38,7 +38,7 @@ class FileProcess(unittest.TestCase):
         rn = ReplaceFileContent()
         savedata = SaveResultToFile()
         xyrxm = savedata.readfile('嫌疑人姓名')
-        rn.rename_pdf (106,xyrxm)
+        rn.rename_pdf(106,xyrxm)
 
     def test_03_replace_xml(self):
         """替换xml文件内容并生成新xml"""
@@ -56,8 +56,6 @@ class FileProcess(unittest.TestCase):
         """加密压缩包"""
         f = Encryption()
         f.encryption_zip(106)  # 加密压缩包，参数为流程编号
-        # 最后关闭jvm
-        jpype.shutdownJVM()
 
     def test_06_put_on_server(self):
         """放在服务器路径上"""
