@@ -45,6 +45,7 @@ class StartYw(SeleniumDriver):
     def save_ycjy(self):
         ycjy = YcjyAjxxPage()
         self.click(ycjy.savebutton(), 'id')  # 点击送达看守所按钮
+        time.sleep(5)
 
     # 网上换押发起
     def start_wshy(self):

@@ -34,3 +34,10 @@ class SearchAJ(SeleniumDriver):
         self.text_input(xyrxm, tb.xyrxminputtext(), 'id')  # 点击添加案件按钮
         self.click(tb.searchbutton(), 'id')
         time.sleep(5)
+
+    # 延长羁押列表中查询案件
+    def search_ycjy(self, xyrxm):
+        tb = YcjyYwListPage()  # 实例化页面，获取元素，对元素进行操作
+        self.text_input(xyrxm, tb.xyrtext(), 'id')  # 点击添加案件按钮
+        self.click(tb.searchbutton(), 'id')
+        time.sleep(5)

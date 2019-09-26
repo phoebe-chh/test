@@ -37,25 +37,19 @@ class YcjyTest(unittest.TestCase):
     def test_01_login(self):
         """登陆"""
         loginpage = LoginPageTest(self.driver)
-        loginpage.login()  # 使用登陆方法
+        loginpage.login('241808', '123')  # 使用登陆方法
         po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
         result = po.is_element_exist('//*[@id="identify"]', "xpath")  # 通过登陆后的单位判断是否登陆成功
         self.assertTrue(result)
 
     def test_02_enter_ycjy_ajlist(self):
-
         """进入延长羁押案件列表"""
         xtname = ChooseXtName(self.driver)
         xtname.switch_iframe(0)
-        xtname.choose_ycjq()  # 选择进入延长羁押业务
-        try:
-            assert "延长羁押" in xtname.get_page_title()  # 获取页面标题,判断是否登陆成功
-            logger.info("进入延长羁押业务成功")
-        except Exception as e:
-            logger.info("进入延长羁押业务失败，抛出异常:%s" % e)
+        xtname.choose_ycjy()  # 选择进入延长羁押业务
+        assert "延长羁押" in xtname.get_page_title()
 
     def test_03_ycjy_addaj(self):
-
         """点击选择案件，选择在押人员"""
 
         add = AddAJ(self.driver)
@@ -64,24 +58,28 @@ class YcjyTest(unittest.TestCase):
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")
         cp = ChoosePeople(self.driver)  # 开始选择案件
-        cp.find_zyry()  # 调用查找案件的方法
+        xyrxm = cp.find_zyry()  # 调用查找案件的方法
+        self.assertIsNotNone(xyrxm)  # 断言嫌疑人是否找到
+        savedata = SaveResultToFile()
+        savedata.writefile('嫌疑人姓名', xyrxm)  # 写入文件
 
     def test_04_ycjy_fill_data(self):
-
         """进入延长羁押案件信息页面，填写必填项"""
         ycjy = FillElementValue(self.driver)
         ycjy.fill_ycjy_ajxx()  # 调用填写案件信息的方法
-        start = StartYw(self.driver)  # 点击送达按钮
-        start.save_ycjy()
-        time.sleep(5)
+        start = StartYw(self.driver)
+        start.save_ycjy()  # 点击送达按钮
 
     def test_05_jzxt_uploadfile(self):
-
         """进入卷宗系统，上传文书和卷宗"""
         zjxt = UploadFile(self.driver)
         zjxt.enterjzxt_ycjy()  # 进入文件管理页面
         self.switch_window(1)  # 需要切换窗口
         zjxt.uploadfile(r"F:\2019-06\autotest\延长羁押拘留期限通知书.pdf")
+        po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
+        self.driver.switch_to.default_content()
+        resultoffile = po.is_element_exist('jqTreeAreaFiles_ztree_4_span', "id")
+        self.assertTrue(resultoffile)  # 断言文书上传结果
         self.switch_window(0)  # 切回延长羁押页面
         time.sleep(5)
 
@@ -90,17 +88,24 @@ class YcjyTest(unittest.TestCase):
         ajid = GetAjidFromUrl(self.driver).getajidfromurl(1)
         sa = SaveResultToFile()
         sa.writefile('ajid', ajid)  # 获取页面ajid并写入文件
+        result = sa.readfile('ajid')
+        self.assertIsNotNone(result)  # 断言ajid是否存入成功
 
     def test_08_start_ycjy(self):
         """点击延长羁押按钮，发起延长羁押,至此公安端页面操作结束"""
         start = StartYw(self.driver)  # 点击送达按钮
         start.start_ycjy()
-        time.sleep(5)
+        logger.info(self.driver.title)
+        assert "延长羁押" in self.driver.title  # 如果提起成功，页面跳转到延长羁押列表
 
     def test_09_tb_save_all_data(self):
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""
         savedata = SaveResultToFile()
         ajid = savedata.readfile('ajid')
+        xyrxm = savedata.readfile('嫌疑人姓名')
+        self.assertIsNotNone(ajid)  # 断言是否读取到ajid
+        savedata.clearfile()  # 清除之前的测试数据
+        savedata.writefile('嫌疑人姓名', xyrxm)
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
         sql_ajcm = "SELECT  ajxx.c_ajmc  FROM db_yw.t_ycjy_ajxx  ajxx WHERE c_id='%s'" % (ajid)  # 通过sql查询ajmc
         ajmc = db.getdata(sql_ajcm, 0)[1]  # 执行sql

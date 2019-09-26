@@ -1,0 +1,186 @@
+2019-09-26 21:57:10,430 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-26 21:57:10,430 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-26 21:57:12,925 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-26 21:57:16,749 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-26 21:57:16,764 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:16,837 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:16,917 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-26 21:57:16,929 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:16,994 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:17,077 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-26 21:57:17,089 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:17,153 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:57:18,057 - element-exist - INFO - 找到该元素
+2019-09-26 21:57:18,071 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-26 21:57:18,071 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="6be9fd8057e59076cda78641479963cd", element="0.16367232578446256-2")>]
+2019-09-26 21:57:18,171 - readconfig - INFO - 操作第9行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[4]/span[1]
+2019-09-26 21:57:18,182 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:18,554 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:57:18,564 - seleniumdriver - INFO - 当前页面标题为：延长羁押通知案件列表
+2019-09-26 21:57:18,571 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:57:18,571 - savadata - INFO - ['案件名称', '公诉同步信息测试案件88511']
+2019-09-26 21:57:18,571 - savadata - INFO - ['平台案件编号', '216B89C691E328331C04219E1417F509']
+2019-09-26 21:57:18,571 - savadata - INFO - ['平台案件关联编号', 'de6d12e2e4f3417a87c678059ac37479']
+2019-09-26 21:57:18,571 - savadata - INFO - ['接收单位编号', '23205001303']
+2019-09-26 21:57:18,571 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-26 21:57:18,659 - readconfig - INFO - 操作第22行元素,当前测试对象元素路径：jqInput56b3a
+2019-09-26 21:57:18,673 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:18,720 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:18,806 - readconfig - INFO - 操作第23行元素,当前测试对象元素路径：jqButtondCX
+2019-09-26 21:57:18,817 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:18,864 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:57:23,910 - element-exist - INFO - 当前列表中的数据内容为：成祖裘
+2019-09-26 21:57:23,946 - element-exist - INFO - 当前列表中的数据内容为：待接收
+2019-09-26 21:57:41,986 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-26 21:57:41,987 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-26 21:57:44,906 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-26 21:57:46,407 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-26 21:57:46,422 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:46,479 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:46,557 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-26 21:57:46,570 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:46,638 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:46,716 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-26 21:57:46,728 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:46,793 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:57:47,731 - element-exist - INFO - 找到该元素
+2019-09-26 21:57:47,743 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-26 21:57:47,743 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="d51be43d0b81c7812fff865d006b3f42", element="0.5304352316903089-2")>]
+2019-09-26 21:57:47,841 - readconfig - INFO - 操作第7行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[9]/span[1]
+2019-09-26 21:57:47,852 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:48,217 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:57:48,226 - seleniumdriver - INFO - 当前页面标题为：延长羁押通知案件列表
+2019-09-26 21:57:48,319 - readconfig - INFO - 操作第20行元素,当前测试对象元素路径：jqButton-btn
+2019-09-26 21:57:48,333 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:48,370 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:57:48,542 - ys-qlc - INFO - 开始选择案件和嫌疑人
+2019-09-26 21:57:48,565 - choosesupects - INFO - 当前页案件数量为4
+2019-09-26 21:57:48,637 - readconfig - INFO - 操作第32行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/table/tbody/tr[1]/td[1]/input
+2019-09-26 21:57:48,648 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:48,713 - seleniumdriver - INFO - 元素双击成功
+2019-09-26 21:57:48,740 - choosesupects - INFO - 当前提捕流程选择的嫌疑人姓名： 成祖裘
+2019-09-26 21:57:48,820 - readconfig - INFO - 操作第33行元素,当前测试对象元素路径：jqButtonSave
+2019-09-26 21:57:48,830 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:48,911 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:57:56,912 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:57:56,995 - readconfig - INFO - 操作第77行元素,当前测试对象元素路径：jqInputctar
+2019-09-26 21:57:57,011 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:57,075 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:57,169 - readconfig - INFO - 操作第78行元素,当前测试对象元素路径：jqDatedyjyksrq
+2019-09-26 21:57:57,180 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:57,346 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:57,432 - readconfig - INFO - 操作第79行元素,当前测试对象元素路径：jqDatedyjyjzrq
+2019-09-26 21:57:57,445 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:57,540 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:57:57,626 - readconfig - INFO - 操作第82行元素,当前测试对象元素路径：save
+2019-09-26 21:57:57,636 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:57:57,686 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:02,767 - readconfig - INFO - 操作第83行元素,当前测试对象元素路径：viewWrit
+2019-09-26 21:58:02,780 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:02,817 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:05,822 - jzxt - INFO - 开始上传公安文书
+2019-09-26 21:58:06,846 - seleniumdriver - INFO - 当前页面标题为：文件管理
+2019-09-26 21:58:06,958 - readconfig - INFO - 操作第35行元素,当前测试对象元素路径：//*[@id="jqTreeAreaFiles_ztree_3_span"]
+2019-09-26 21:58:06,970 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:07,012 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:07,107 - readconfig - INFO - 操作第36行元素,当前测试对象元素路径：jqHtmlAreaUp
+2019-09-26 21:58:07,120 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:08,484 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:08,494 - seleniumdriver - INFO - 当前页面的ifram个数为3
+2019-09-26 21:58:08,495 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="d51be43d0b81c7812fff865d006b3f42", element="0.7965880901538955-3")>, <selenium.webdriver.remote.webelement.WebElement (session="d51be43d0b81c7812fff865d006b3f42", element="0.7965880901538955-4")>, <selenium.webdriver.remote.webelement.WebElement (session="d51be43d0b81c7812fff865d006b3f42", element="0.7965880901538955-5")>]
+2019-09-26 21:58:08,603 - readconfig - INFO - 操作第37行元素,当前测试对象元素路径：SWFUpload_0
+2019-09-26 21:58:08,616 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:08,681 - seleniumdriver - INFO - 元素双击成功
+2019-09-26 21:58:08,681 - jzxt - INFO - F://2019-06//autotest//upload.exe chrome F:\2019-06\autotest\延长羁押拘留期限通知书.pdf
+2019-09-26 21:58:14,005 - readconfig - INFO - 操作第39行元素,当前测试对象元素路径：/html/body/div[6]/div/div[1]
+2019-09-26 21:58:14,017 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:14,041 - seleniumdriver - INFO - 元素双击成功
+2019-09-26 21:58:14,051 - seleniumdriver - INFO - 当前页面的ifram个数为3
+2019-09-26 21:58:14,051 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="d51be43d0b81c7812fff865d006b3f42", element="0.7965880901538955-3")>, <selenium.webdriver.remote.webelement.WebElement (session="d51be43d0b81c7812fff865d006b3f42", element="0.7965880901538955-4")>, <selenium.webdriver.remote.webelement.WebElement (session="d51be43d0b81c7812fff865d006b3f42", element="0.7965880901538955-5")>]
+2019-09-26 21:58:14,164 - readconfig - INFO - 操作第40行元素,当前测试对象元素路径：jqButton-btn
+2019-09-26 21:58:14,176 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:14,244 - seleniumdriver - INFO - 元素双击成功
+2019-09-26 21:58:24,261 - element-exist - INFO - 找到该元素
+2019-09-26 21:58:29,277 - get-ajid - INFO - 获取到的ajid为:0B49B89B4AA5EF7E78D98269895C76B4
+2019-09-26 21:58:29,277 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:58:29,278 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:58:29,278 - savadata - INFO - ['案件名称', '公诉同步信息测试案件88511']
+2019-09-26 21:58:29,278 - savadata - INFO - ['平台案件编号', '216B89C691E328331C04219E1417F509']
+2019-09-26 21:58:29,278 - savadata - INFO - ['平台案件关联编号', 'de6d12e2e4f3417a87c678059ac37479']
+2019-09-26 21:58:29,278 - savadata - INFO - ['接收单位编号', '23205001303']
+2019-09-26 21:58:29,278 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-26 21:58:29,278 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:58:29,278 - savadata - INFO - ['ajid', '0B49B89B4AA5EF7E78D98269895C76B4']
+2019-09-26 21:58:29,361 - readconfig - INFO - 操作第81行元素,当前测试对象元素路径：jqButton-btn
+2019-09-26 21:58:29,373 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:29,450 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:29,458 - ys-qlc - INFO - 延长羁押通知案件编辑
+2019-09-26 21:58:29,464 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:58:29,465 - savadata - INFO - ['案件名称', '公诉同步信息测试案件88511']
+2019-09-26 21:58:29,465 - savadata - INFO - ['平台案件编号', '216B89C691E328331C04219E1417F509']
+2019-09-26 21:58:29,465 - savadata - INFO - ['平台案件关联编号', 'de6d12e2e4f3417a87c678059ac37479']
+2019-09-26 21:58:29,465 - savadata - INFO - ['接收单位编号', '23205001303']
+2019-09-26 21:58:29,465 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-26 21:58:29,465 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:58:29,465 - savadata - INFO - ['ajid', '0B49B89B4AA5EF7E78D98269895C76B4']
+2019-09-26 21:58:29,466 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:58:29,466 - savadata - INFO - ['案件名称', '公诉同步信息测试案件88511']
+2019-09-26 21:58:29,466 - savadata - INFO - ['平台案件编号', '216B89C691E328331C04219E1417F509']
+2019-09-26 21:58:29,466 - savadata - INFO - ['平台案件关联编号', 'de6d12e2e4f3417a87c678059ac37479']
+2019-09-26 21:58:29,466 - savadata - INFO - ['接收单位编号', '23205001303']
+2019-09-26 21:58:29,466 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-26 21:58:29,467 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:58:29,467 - savadata - INFO - ['ajid', '0B49B89B4AA5EF7E78D98269895C76B4']
+2019-09-26 21:58:29,467 - savadata - INFO - 保存结果到logs/ajid.txt
+2019-09-26 21:58:29,468 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:58:29,468 - read-db-config - INFO - E:\myclone/config/config.ini
+2019-09-26 21:58:29,469 - database - INFO - 链接数据库172.23.23.222
+2019-09-26 21:58:29,479 - database - INFO - 获取表头为:c_ajmc
+2019-09-26 21:58:29,479 - database - INFO - 获取第1个数据值为:公诉同步信息测试案件88511
+2019-09-26 21:58:29,479 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:58:29,480 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:58:29,480 - database - INFO - 链接数据库172.23.23.222
+2019-09-26 21:58:29,488 - database - INFO - 获取表头为:c_jcajid
+2019-09-26 21:58:29,488 - database - INFO - 获取第1个数据值为:de6d12e2e4f3417a87c678059ac37479
+2019-09-26 21:58:29,488 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:58:29,489 - database - INFO - 链接数据库172.23.23.222
+2019-09-26 21:58:29,507 - database - INFO - 获取表头为:alise_js
+2019-09-26 21:58:29,507 - database - INFO - 获取第1个数据值为:23205001303
+2019-09-26 21:58:29,508 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:58:29,508 - database - INFO - 链接数据库172.23.23.222
+2019-09-26 21:58:29,526 - database - INFO - 获取表头为:alise_fs
+2019-09-26 21:58:29,526 - database - INFO - 获取第1个数据值为:2320584
+2019-09-26 21:58:29,526 - savadata - INFO - 保存结果到logs/record.txt
+2019-09-26 21:58:32,097 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-26 21:58:32,097 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-26 21:58:35,078 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-26 21:58:37,900 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-26 21:58:37,914 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:37,982 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:58:38,072 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-26 21:58:38,082 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:38,156 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:58:38,240 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-26 21:58:38,253 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:38,306 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:39,353 - element-exist - INFO - 找到该元素
+2019-09-26 21:58:39,365 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-26 21:58:39,365 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="011414c8111e9fc9bbc0f58189cc2ca6", element="0.5079951644813496-2")>]
+2019-09-26 21:58:39,476 - readconfig - INFO - 操作第9行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[4]/span[1]
+2019-09-26 21:58:39,487 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:39,933 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:39,944 - seleniumdriver - INFO - 当前页面标题为：延长羁押通知案件列表
+2019-09-26 21:58:39,949 - savadata - INFO - ['嫌疑人姓名', '成祖裘']
+2019-09-26 21:58:39,949 - savadata - INFO - ['案件名称', '公诉同步信息测试案件88511']
+2019-09-26 21:58:39,949 - savadata - INFO - ['平台案件编号', '0B49B89B4AA5EF7E78D98269895C76B4']
+2019-09-26 21:58:39,949 - savadata - INFO - ['平台案件关联编号', 'de6d12e2e4f3417a87c678059ac37479']
+2019-09-26 21:58:39,949 - savadata - INFO - ['接收单位编号', '23205001303']
+2019-09-26 21:58:39,949 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-26 21:58:40,032 - readconfig - INFO - 操作第22行元素,当前测试对象元素路径：jqInput56b3a
+2019-09-26 21:58:40,045 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:40,090 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 21:58:40,171 - readconfig - INFO - 操作第23行元素,当前测试对象元素路径：jqButtondCX
+2019-09-26 21:58:40,182 - seleniumdriver - INFO - 找到该元素
+2019-09-26 21:58:40,228 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 21:58:45,275 - element-exist - INFO - 当前列表中的数据内容为：成祖裘
+2019-09-26 21:58:45,309 - element-exist - INFO - 当前列表中的数据内容为：待接收

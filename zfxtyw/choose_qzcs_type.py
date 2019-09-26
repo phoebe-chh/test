@@ -45,5 +45,5 @@ class ChooseQzcs(SeleniumDriver):
         self.double_click(tb.qzsclist(), 'xpath')  # 点击下拉框
         self.double_click(tb.qzscfirst(), 'xpath')  # 选择第一个强制措施
         self.double_click(tb.qzscconfirebutton(), 'xpath')  # 勾选强制措施勾选框
-        self.double_click(tb.savebutton(), 'xpath')  # 点击保存按钮
+        # self.double_click(tb.savebutton(), 'xpath')  # 点击保存按钮
         time.sleep(2)

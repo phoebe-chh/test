@@ -24,6 +24,10 @@ class HomePage(ReadExcel):
     def ycjy(self):
         return self.get_element('homepage_ywlx', 'element3')  # 获取页面元素路径
 
+    # 延长羁押
+    def ycjy_kss(self):
+        return self.get_element('homepage_ywlx', 'element5')  # 获取页面元素路径
+
     # 换押
     def wshy(self):
         return self.get_element('homepage_ywlx', 'element4')  # 获取页面元素路径

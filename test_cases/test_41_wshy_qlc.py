@@ -38,7 +38,7 @@ class WshyTest(unittest.TestCase):
     def test_01_login(self):
         """登陆"""
         loginpage = LoginPageTest(self.driver)
-        loginpage.login()  # 使用登陆方法
+        loginpage.login('241808', '123')  # 使用登陆方法
         po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
         result = po.is_element_exist('//*[@id="identify"]', "xpath")  # 通过登陆后的单位判断是否登陆成功
         self.assertTrue(result)
@@ -49,12 +49,7 @@ class WshyTest(unittest.TestCase):
         xtname = ChooseXtName(self.driver)
         xtname.switch_iframe(0)
         xtname.choose_wshy()  # 选择进入换押业务
-        try:
-            assert "换押" in xtname.get_page_title()  # 获取页面标题,判断是否登陆成功
-            logger.info("进入换押业务成功")
-        except Exception as e:
-            logger.info("进入换押业务失败，抛出异常:%s" % e)
-        # time.sleep(3)
+        assert "换押" in xtname.get_page_title()  # 获取页面标题,判断是否登陆成功
 
     def test_03_whsy_addaj(self):
         """点击选择案件，选择在押人员"""

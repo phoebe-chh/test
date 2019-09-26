@@ -67,7 +67,7 @@ class YsTest(unittest.TestCase):
         tbaj.chooseqzcs_ys()  # 调用选择强制措施方法
         logger.info('强制措施选择结束')
         po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
-        result = po.is_table_data_exist('suspectGrid-table', 4)  # 获取当前列表中该列的值
+        result = po.is_table_data_exist('xyrGrid-table', 5)  # 获取当前列表中该列的值
         self.assertIsNotNone(result)  # 断言强制措施中的内容是否有值
 
     def test_05_jzxt_uploadfile(self):
@@ -112,7 +112,7 @@ class YsTest(unittest.TestCase):
         ys = StartYw(self.driver)
         ys.start_ys()  # 发起移诉流程
         logger.info(self.driver.title)
-        assert "移诉案件列表" in self.driver.title  # 如果移诉成功，页面跳转到提捕列表
+        assert "移诉案件列表" in self.driver.title  # 如果移诉成功，页面跳转到移诉列表
 
     def test_09_tb_save_all_data(self):
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""

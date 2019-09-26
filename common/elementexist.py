@@ -33,17 +33,13 @@ class ElemnetExist(SeleniumDriver):
             self.driver.get_screenshot_as_file('../errormg/%s.png' % nowtime)
         return flag
 
-    # 判断元素是否可点击
-    def is_element_locate(self, locator, locatorType='id'):
-        pass
-
     # 判断某个列表中的数据是否为空,参数为当前表格的table标签id和当前需要定位的元素的序列号
     def is_table_data_exist(self, tablid, lownumber):
         tablelist = self.driver.find_element_by_id(tablid)
         rows = tablelist.find_elements_by_tag_name('tr')
         cell = rows[1].find_elements_by_tag_name('td')
         data = cell[lownumber].text
-        logger.info("当前列表中的数据内容为{}".format(data))
+        logger.info("当前列表中的数据内容为：{}".format(data))
         return data
 
     # 判断卷宗页面的文件是否存在,参数为当前父节点的id和当前定位的元素位置
