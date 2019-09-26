@@ -38,7 +38,7 @@ class FileProcess(unittest.TestCase):
         rn = ReplaceFileContent()
         savedata = SaveResultToFile()
         xyrxm = savedata.readfile('嫌疑人姓名')
-        rn.rename_pdf(106,xyrxm)
+        rn.rename_pdf(106,xyrxm)  # 修改pdf名称的方法，把嫌疑人姓名拼接到pdf文件名上
 
     def test_03_replace_xml(self):
         """替换xml文件内容并生成新xml"""

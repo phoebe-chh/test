@@ -42,22 +42,16 @@ class TbTest(unittest.TestCase):
         loginpage.login()  # 使用登陆方法
         po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
         result = po.is_element_exist('//*[@id="identify"]', "xpath")  # 通过登陆后的单位判断是否登陆成功
-        self.assertTrue(result)
+        self.assertTrue(result)  # 断言登陆结果
 
     def test_02_enter_tb_ajlist(self):
-
         """进入提捕案件列表"""
         tb = ChooseXtName(self.driver)
         tb.switch_iframe(0)
         tb.choose_tb()  # 选择进入提捕业务
-        try:
-            assert "提捕" in tb.get_page_title()  # 获取页面标题,判断是否登陆成功
-            logger.info("进入提捕业务成功")
-        except Exception as e:
-            logger.info("进入提捕业务失败，抛出异常:%s" % e)
+        assert "提捕" in tb.get_page_title()  # 断言是否进入提捕页面
 
     def test_03_tb_addtbaj(self):
-
         """点击选择案件,进入提案器"""
 
         choosepeople = AddAJ(self.driver)
@@ -66,10 +60,10 @@ class TbTest(unittest.TestCase):
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")
         cp = ChoosePeople(self.driver)  # 开始选择案件
-        cp.find_avaibale_tbaj()  # 调用查找嫌疑人的方法
+        result = cp.find_avaibale_tbaj()  # 调用查找嫌疑人的方法
+        self.assertTrue(result)  # 断言是否找到嫌疑人方法的返回结果
 
     def test_04_fill_in_value(self):
-
         """进入提捕页面，填写字段信息"""
 
         tb = FillElementValue(self.driver)
@@ -77,30 +71,38 @@ class TbTest(unittest.TestCase):
         logger.info('页面字段内容填写结束')
 
     def test_05_tb_chooseqzcs(self):
-
         """进入提捕页面，选择强制措施并保存"""
         tbaj = ChooseQzcs(self.driver)
         tbaj.chooseqzcs_tb()  # 调用选择强制措施方法
+        po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
+        result = po.is_table_data_exist('suspectGrid-table', 4)  # 获取当前列表中该列的值
+        self.assertTrue(result)  # 断言强制措施中的内容是否有值
 
     def test_05_jzxt_uploadfile(self):
-
         """进入卷宗系统，上传文书和卷宗"""
         zjxt = UploadFile(self.driver)
         zjxt.enterjzxt_tb()  # 进入文件管理页面
         self.switch_window(1)  # 需要切换窗口
         zjxt.uploadfile(r"F:\2019-06\autotest\起诉意见书.pdf")  # 上传文书，传入文书路径
+        po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
+        # 断言卷宗是否上传成功
         self.driver.switch_to.default_content()
+        resultoffile = po.is_element_exist('jqTreeAreaFiles_ztree_4_span', "id")
+        self.assertTrue(resultoffile)  # 断言上传结果
         zjxt.uploadjz(r"F:\2019-06\autotest\jz01.jpg")  # 上传卷宗方法
+        resultojz = po.is_element_exist('jqTreeAreaFiles_ztree_8_span', "id")
+        self.assertTrue(resultojz)
         self.switch_window(0)  # 切回提捕页面
+        # 断言是否上传卷宗成功
 
     def test_06_get_ajid(self):
         """从页面url获取ajid，并保存到文件中"""
         ajid = GetAjidFromUrl(self.driver).getajidfromurl(1)
+        self.assertIsNotNone(ajid)  # 断言是否获取到ajid
         sa = SaveResultToFile()
         sa.writefile('ajid', ajid)  # 获取页面ajid并写入文件
 
     def test_07_set_qzzt(self):
-
         """设置签章状态为1，通过ajid查询数据库，设置n_yqz=1"""
         # 设置签章状态的sql
         ajid = SaveResultToFile().readfile('ajid')
@@ -114,10 +116,12 @@ class TbTest(unittest.TestCase):
 
         tb = StartYw(self.driver)
         tb.start_tb()  # 发起提捕流程
+        po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
+        result = po.is_alert_present()  # 判断是否有弹框，如果没有则认为提捕成功
+        self.assertFalse(result)
 
     # 页面操作结束之后，保存数据库中字段内容到文件中，提供后续文件操作使用
     def test_09_tb_save_all_data(self):
-
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""
         savedata = SaveResultToFile()
         ajid = savedata.readfile('ajid')
@@ -146,20 +150,21 @@ class TbTest(unittest.TestCase):
 
 if __name__ == '__main__':
     # 运行所有
-    unittest.main(verbosity=2)
+    # unittest.main(verbosity=2)
     # 运行单个用例
-    # testunit = unittest.TestSuite()
-    # testunit.addTest(TbTest('test_01_login'))  # 添加测试用例方法名
-    # # # testunit.addTest(TbTest('test_02_enter_tb_ajlist'))
-    # # # testunit.addTest(TbTest('test_03_tb_addtbaj'))
-    # # # testunit.addTest(TbTest('test_04_fill_in_value'))
-    # # # testunit.addTest(TbTest('test_05_tb_chooseqzcs'))
+    testunit = unittest.TestSuite()
+    testunit.addTest(TbTest('test_01_login'))  # 添加测试用例方法名
+    testunit.addTest(TbTest('test_02_enter_tb_ajlist'))
+    testunit.addTest(TbTest('test_03_tb_addtbaj'))
+    testunit.addTest(TbTest('test_04_fill_in_value'))
+    testunit.addTest(TbTest('test_05_tb_chooseqzcs'))
+    # testunit.addTest(TbTest('test_05_jzxt_uploadfile'))
     # # # testunit.addTest(TbTest('test_07_set_qzzt'))
     # # # testunit.addTest(TbTest('test_09_tb_save_all_data'))
-    # # testunit.addTest(TbTest('test_08_tb_gotibu'))
+    testunit.addTest(TbTest('test_08_tb_gotibu'))
     # # # # test_09_tb_save_all_data
     # # # # testunit.addTest(TbTest('test_07_set_qzzt'))
     # # # # # # test_05_jzxt_uploadfile
-    # runer = unittest.TextTestRunner(verbosity=2)
-    # runer.run(testunit)
+    runer = unittest.TextTestRunner(verbosity=2)
+    runer.run(testunit)
     # # #

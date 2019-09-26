@@ -108,6 +108,7 @@ class YsTest(unittest.TestCase):
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""
         savedata = SaveResultToFile()
         ajid = savedata.readfile('ajid')
+        savedata.clearfile()  # 清除之前的测试数据
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
         sql_ajcm = "SELECT  ajxx.c_ajmc  FROM db_yw.t_ys_ajxx  ajxx WHERE c_id='%s'" % (ajid)  # 通过sql查询ajmc
         ajmc = db.getdata(sql_ajcm, 0)[1]  # 执行sql

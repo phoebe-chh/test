@@ -45,8 +45,8 @@ class ChoosePeople(SeleniumDriver):
                     # 判断是否有可选的嫌疑人
                     if len(spec_now) >= 2:  # 当前页能找到有嫌疑人的案件
                         logger.info("当前选择的这个案件有嫌疑人，结束寻找")
-                        spsname = spec_rows[1].find_elements_by_tag_name('td')[1].text
-                        logger.info('当前提捕流程选择的嫌疑人姓名： %s' % spsname)
+                        self.spsname = spec_rows[1].find_elements_by_tag_name('td')[1].text
+                        logger.info('当前提捕流程选择的嫌疑人姓名： %s' % self.spsname)
                         self.click(taq.confirmbutton(), 'xpath')  # 勾选勾选框
                         logger.info("勾选成功")
                         self.click(taq.submitbutton(), 'xpath')  # 点击提交按钮
@@ -60,6 +60,12 @@ class ChoosePeople(SeleniumDriver):
                         logger.info("开始翻页，当前为第%s次翻页，超过3次将不再继续翻页" % nextpagetime)
             else:
                 logger.info("当前提案器中无案件，无法提案")
+
+            # 判断是否选择到嫌疑人
+            if self.spsname is not None:
+                return True
+            else:
+                return False
 
     # 选择在押人员
     def find_zyry(self):

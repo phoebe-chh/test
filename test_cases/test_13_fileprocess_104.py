@@ -21,8 +21,8 @@ class FileProcess(unittest.TestCase):
     def test_01_replace_xml(self):
         """替换xml文件内容并生成新xml"""
         f = ReplaceFileContent()
-        f.getnodename()  # 从record.txt中获取替换节点名称
-        f.getnodecontent()  # 从record.txt获取替换节点内容
+        f.getnodename()  # 从ajid.txt中获取替换节点名称
+        f.getnodecontent()  # 从ajid.txt获取替换节点内容
         f.replace_content('104')  # 替换的xml文件，参数为流程编号
 
     def test_02_file_zip(self):

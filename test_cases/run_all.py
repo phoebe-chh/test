@@ -29,7 +29,7 @@ HtmlFile = report_path + now + "report_example.html"
 fp = open(HtmlFile, "wb")
 
 # 构建suite
-suite = unittest.defaultTestLoader.discover(case_path,pattern="test_1*.py",top_level_dir=None)
+suite = unittest.defaultTestLoader.discover(case_path,pattern="test_11*.py",top_level_dir=None)
 # logging.info(suite)
 
 

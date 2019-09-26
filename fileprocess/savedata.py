@@ -38,7 +38,6 @@ class SaveResultToFile:
     # 读取文件内容，传入数据标识，通过=号进行区分，返回=号后面内容
     def readfile(self, name):
         path = "../logs/ajid.txt"
-        lines = []
         data = []
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
@@ -87,5 +86,5 @@ if __name__ == '__main__':
     # Q.clearfile()
     # Q.writefile('ajid', '31321321321')
     # Q.writefile('ajid', '31321321321')
-    print(Q.readfile('ajmc'))
+    print(Q.readfile('ajid'))
     # Q.savedata_to_record_file()

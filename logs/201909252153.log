@@ -1,0 +1,174 @@
+2019-09-25 21:53:11,219 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-25 21:53:11,219 - browserdriver - INFO - 测试的URL: http://172.23.23.222:7070/zfxtbgxt/form/86595d4a7f9384381526acb302bff724/insert
+2019-09-25 21:53:13,742 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-25 21:53:15,606 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-25 21:53:15,619 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:15,668 - seleniumdriver - INFO - 数据写入成功
+2019-09-25 21:53:15,736 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-25 21:53:15,746 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:15,806 - seleniumdriver - INFO - 数据写入成功
+2019-09-25 21:53:15,871 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-25 21:53:15,884 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:15,947 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:16,980 - element-exist - INFO - 找到该元素
+2019-09-25 21:53:16,993 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-25 21:53:16,993 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.5024012186205777-2")>]
+2019-09-25 21:53:17,073 - readconfig - INFO - 操作第5行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[2]/span[1]
+2019-09-25 21:53:17,086 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:18,115 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:18,123 - seleniumdriver - INFO - 当前页面标题为：提捕案件列表
+2019-09-25 21:53:18,196 - readconfig - INFO - 操作第11行元素,当前测试对象元素路径：jqButton-btn
+2019-09-25 21:53:18,209 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:18,425 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:18,463 - tb-qlc - INFO - 开始选择案件和嫌疑人
+2019-09-25 21:53:18,486 - choosesupects - INFO - 当前页案件数量为5
+2019-09-25 21:53:18,486 - choosesupects - INFO - 正在查找第1条案件
+2019-09-25 21:53:18,512 - choosesupects - INFO - 当前的案件列表数量为5
+2019-09-25 21:53:18,526 - choosesupects - INFO - 双击案件列表，寻找有嫌疑人的案件
+2019-09-25 21:53:20,599 - choosesupects - INFO - 正在查找的当前案件的嫌疑人数量为0
+2019-09-25 21:53:20,599 - choosesupects - INFO - 正在查找第2条案件
+2019-09-25 21:53:20,612 - choosesupects - INFO - 当前的案件列表数量为5
+2019-09-25 21:53:20,628 - choosesupects - INFO - 双击案件列表，寻找有嫌疑人的案件
+2019-09-25 21:53:22,697 - choosesupects - INFO - 正在查找的当前案件的嫌疑人数量为0
+2019-09-25 21:53:22,697 - choosesupects - INFO - 正在查找第3条案件
+2019-09-25 21:53:22,712 - choosesupects - INFO - 当前的案件列表数量为5
+2019-09-25 21:53:22,730 - choosesupects - INFO - 双击案件列表，寻找有嫌疑人的案件
+2019-09-25 21:53:24,828 - choosesupects - INFO - 正在查找的当前案件的嫌疑人数量为9
+2019-09-25 21:53:24,828 - choosesupects - INFO - 当前选择的这个案件有嫌疑人，结束寻找
+2019-09-25 21:53:24,864 - choosesupects - INFO - 当前提捕流程选择的嫌疑人姓名： 菱听惜
+2019-09-25 21:53:24,942 - readconfig - INFO - 操作第16行元素,当前测试对象元素路径：/html/body/div[1]/div[3]/div[1]/table/thead/tr/th[1]/div[2]/input
+2019-09-25 21:53:24,955 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:25,017 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:25,017 - choosesupects - INFO - 勾选成功
+2019-09-25 21:53:25,113 - readconfig - INFO - 操作第17行元素,当前测试对象元素路径：/html/body/div[2]/div[1]/button
+2019-09-25 21:53:25,124 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:25,184 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:25,184 - choosesupects - INFO - 提交成功
+2019-09-25 21:53:25,260 - readconfig - INFO - 操作第48行元素,当前测试对象元素路径：jqNumeric5d68d
+2019-09-25 21:53:26,575 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:26,638 - seleniumdriver - INFO - 数据写入成功
+2019-09-25 21:53:26,717 - readconfig - INFO - 操作第49行元素,当前测试对象元素路径：jqInput98ad2
+2019-09-25 21:53:26,727 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:26,827 - seleniumdriver - INFO - 数据写入成功
+2019-09-25 21:53:26,827 - tb-qlc - INFO - 页面字段内容填写结束
+2019-09-25 21:53:26,905 - readconfig - INFO - 操作第37行元素,当前测试对象元素路径：//*[@id="viewWrit_tb"]
+2019-09-25 21:53:26,920 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:26,952 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:29,964 - jzxt - INFO - 开始上传公安文书
+2019-09-25 21:53:31,023 - seleniumdriver - INFO - 当前页面标题为：文件管理
+2019-09-25 21:53:31,129 - readconfig - INFO - 操作第25行元素,当前测试对象元素路径：//*[@id="jqTreeAreaFiles_ztree_3_span"]
+2019-09-25 21:53:31,144 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:31,187 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:31,266 - readconfig - INFO - 操作第26行元素,当前测试对象元素路径：jqHtmlAreaUp
+2019-09-25 21:53:31,279 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:32,001 - seleniumdriver - INFO - 元素点击成功
+2019-09-25 21:53:32,014 - seleniumdriver - INFO - 当前页面的ifram个数为3
+2019-09-25 21:53:32,014 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-3")>, <selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-4")>, <selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-5")>]
+2019-09-25 21:53:32,112 - readconfig - INFO - 操作第27行元素,当前测试对象元素路径：//*[@id="SWFUpload_0"]
+2019-09-25 21:53:32,126 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:32,184 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:32,184 - jzxt - INFO - F://2019-06//autotest//upload.exe chrome F:\2019-06\autotest\起诉意见书.pdf
+2019-09-25 21:53:37,486 - readconfig - INFO - 操作第29行元素,当前测试对象元素路径：/html/body/div[6]/div/div[1]
+2019-09-25 21:53:37,497 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:37,520 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:37,529 - seleniumdriver - INFO - 当前页面的ifram个数为3
+2019-09-25 21:53:37,529 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-3")>, <selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-4")>, <selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-5")>]
+2019-09-25 21:53:37,611 - readconfig - INFO - 操作第30行元素,当前测试对象元素路径：jqButton-btn
+2019-09-25 21:53:37,623 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:37,684 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:47,724 - element-exist - INFO - 找到该元素
+2019-09-25 21:53:47,724 - jzxt - INFO - 开始上传卷宗
+2019-09-25 21:53:47,729 - seleniumdriver - INFO - 当前页面标题为：文件管理
+2019-09-25 21:53:47,814 - readconfig - INFO - 操作第31行元素,当前测试对象元素路径：//*[@id="jqTreeAreaFiles_ztree_6_span"]
+2019-09-25 21:53:47,827 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:47,870 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:47,980 - readconfig - INFO - 操作第32行元素,当前测试对象元素路径：//*[@id="jqTreeAreaFiles_ztree_6_switch"]
+2019-09-25 21:53:48,024 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:48,051 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:48,126 - readconfig - INFO - 操作第33行元素,当前测试对象元素路径：//*[@id="jqTreeAreaFiles_ztree_7_span"]
+2019-09-25 21:53:48,136 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:48,168 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:48,256 - readconfig - INFO - 操作第26行元素,当前测试对象元素路径：jqHtmlAreaUp
+2019-09-25 21:53:48,266 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:48,529 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:48,545 - seleniumdriver - INFO - 当前页面的ifram个数为3
+2019-09-25 21:53:48,545 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-3")>, <selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-4")>, <selenium.webdriver.remote.webelement.WebElement (session="65fa222549e3894fb4fdf1979e18fabe", element="0.7842613455867165-5")>]
+2019-09-25 21:53:48,644 - readconfig - INFO - 操作第27行元素,当前测试对象元素路径：//*[@id="SWFUpload_0"]
+2019-09-25 21:53:48,672 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:48,729 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:53:53,895 - readconfig - INFO - 操作第34行元素,当前测试对象元素路径：//*[@id="jqButtonOk"]/button
+2019-09-25 21:53:53,913 - seleniumdriver - INFO - 找到该元素
+2019-09-25 21:53:54,000 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:54:09,562 - element-exist - INFO - 在10s内无法定位到该元素，该元素不存在
+2019-09-25 21:54:10,151 - ChooseQzcs - INFO - 开始执行js
+2019-09-25 21:54:10,151 - ChooseQzcs - INFO - 开始执行js
+2019-09-25 21:54:10,235 - readconfig - INFO - 操作第39行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/div/div/div/div[2]/div/div[4]/div/div[2]/div/div[1]/table/tbody/tr/td[5]
+2019-09-25 21:54:20,270 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div/div/div[2]/div/div[4]/div/div[2]/div/div[1]/table/tbody/tr/td[5]"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:54:20,585 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:54:20,592 - seleniumdriver - INFO - js执行失败抛出异常Message: unknown error: Cannot read property 'scrollIntoView' of null
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:54:25,716 - readconfig - INFO - 操作第39行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/div/div/div/div[2]/div/div[4]/div/div[2]/div/div[1]/table/tbody/tr/td[5]
+2019-09-25 21:54:35,779 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div/div/div[2]/div/div[4]/div/div[2]/div/div[1]/table/tbody/tr/td[5]"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:54:36,091 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:54:36,098 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:54:36,176 - readconfig - INFO - 操作第40行元素,当前测试对象元素路径：[class='jqColumnEditor jqColumnEditor-default']
+2019-09-25 21:54:46,238 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"css selector","selector":"[class='jqColumnEditor jqColumnEditor-default']"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:54:46,584 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:54:46,590 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:54:46,680 - readconfig - INFO - 操作第41行元素,当前测试对象元素路径：//*[@id="jqSelectListcfe6b"]
+2019-09-25 21:54:56,726 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="jqSelectListcfe6b"]"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:54:57,055 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:54:57,059 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:54:57,139 - readconfig - INFO - 操作第42行元素,当前测试对象元素路径：/html/body/div[10]/div/div[1]
+2019-09-25 21:55:07,177 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[10]/div/div[1]"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:55:07,547 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:55:07,553 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:55:07,635 - readconfig - INFO - 操作第43行元素,当前测试对象元素路径：/html/body/div[9]/div[1]/div[3]/button[1]
+2019-09-25 21:55:17,684 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[9]/div[1]/div[3]/button[1]"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:55:18,012 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:55:18,016 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:55:18,096 - readconfig - INFO - 操作第44行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/div/div/div/div[3]/div[2]/div/button
+2019-09-25 21:55:28,115 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div/div/div[3]/div[2]/div/button"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:55:28,470 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:55:28,478 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:55:40,888 - get-ajid - INFO - 获取到的ajid为:e108f2a3c0124d2f9136061d4487d49f
+2019-09-25 21:55:41,198 - savadata - INFO - ['案件名称', '梦雅涉嫌故意杀人案']
+2019-09-25 21:55:41,198 - savadata - INFO - ['平台案件编号', 'CE6838E039E34799B64A3A7F4F42E516']
+2019-09-25 21:55:41,198 - savadata - INFO - ['平台案件关联编号', 'f8f862fc8464420887ecfee2e9ba09e8']
+2019-09-25 21:55:41,199 - savadata - INFO - ['接收单位编号', '3320584']
+2019-09-25 21:55:41,199 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-25 21:55:41,592 - readconfig - INFO - 操作第45行元素,当前测试对象元素路径：/html/body/div[1]/div[1]/div/div/div/div[3]/div[1]/div/div/div/button
+2019-09-25 21:55:51,616 - seleniumdriver - ERROR - 元素未找到，抛出异常Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div/div/div[3]/div[1]/div/div/div/button"}
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2019-09-25 21:55:51,950 - seleniumdriver - INFO - 截图成功，图片保存路径为：E:\myclone\errormg\
+2019-09-25 21:55:51,957 - seleniumdriver - INFO - 元素双击成功
+2019-09-25 21:55:56,957 - savadata - INFO - ['案件名称', '梦雅涉嫌故意杀人案']
+2019-09-25 21:55:56,958 - savadata - INFO - ['平台案件编号', 'CE6838E039E34799B64A3A7F4F42E516']
+2019-09-25 21:55:56,958 - savadata - INFO - ['平台案件关联编号', 'f8f862fc8464420887ecfee2e9ba09e8']
+2019-09-25 21:55:56,959 - savadata - INFO - ['接收单位编号', '3320584']
+2019-09-25 21:55:56,959 - savadata - INFO - ['发送单位编号', '2320584']

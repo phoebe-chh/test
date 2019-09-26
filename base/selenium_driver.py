@@ -1,5 +1,7 @@
 import os
 import time
+from traceback import print_stack
+
 from _pytest import logging
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -48,9 +50,9 @@ class SeleniumDriver:
         except NoSuchElementException as e:
             logger.error("元素未找到，抛出异常{}".format(e))
             self.get_window_img()  # 截图
-
         return element
 
+    # 点击元素
     def click(self, locator, locatorType="id"):
         try:
             element = self.getElement(locator, locatorType)
@@ -58,8 +60,9 @@ class SeleniumDriver:
             logger.info("元素点击成功")
         except Exception as e:
             logger.error("元素点击失败,异常信息:{}".format(e))
-            # print_stack()
+            print_stack()
 
+    # 在文本框元素中写入数据
     def text_input(self, data, locator, locatorType="id"):
         try:
             element = self.getElement(locator, locatorType)
@@ -69,6 +72,7 @@ class SeleniumDriver:
             logger.info("数据写入失败,抛出异常: {}".format(e))
             self.get_window_img()
 
+    # 双击元素
     def double_click(self, locator, locatorType='id'):
         try:
             ge = self.getElement(locator, locatorType)
@@ -129,11 +133,5 @@ class SeleniumDriver:
     def switch_win(self, number):
         all_windows = self.driver.window_handles
         logger.info("当前有{}个窗口,当前窗口句柄分别是{}".format(len(all_windows), all_windows))
-        # logger.info("当前窗口句柄分别是{}".format(all_windows))
         self.driver.switch_to.window(all_windows[number])
 
-    # def get_content(self):
-    #     self.getElement()
-
-    # def get_elements_by_tag(self,locator):
-    #     return self.driver.find_elements_by_tag_name(locator)

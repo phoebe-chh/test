@@ -45,7 +45,8 @@ class BrowserDriver():
         driver.get(url)
 
         # logger.info("打开的url %s" % url)
-        driver.maximize_window()
+        driver.set_window_size(1366,768)
+        # driver.maximize_window()
         # logger.info("最大化窗口")
         driver.implicitly_wait(10)
         # logger.info("最长等待时间10s")
