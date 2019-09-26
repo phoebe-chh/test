@@ -25,10 +25,21 @@ class InterfaceTest(unittest.TestCase):
         self.assertEqual(200, result)
         time.sleep(40)
 
-    def test_02_assert_interface_result(self):
-        """验证调用接口后，协同状态是否变成104"""
+    def test_02_assert_result_ga(self):
+        """验证公安端协同状态是否变成104"""
         # 连接数据库
         db = DataBase('ga')
+        savedata = SaveResultToFile()
+        ajid = savedata.readfile('平台案件编号')  # 从文件中读取ajid
+        sql = "SELECT n_tbxtzt  FROM db_yw.t_tb_ajxx WHERE c_id LIKE '%s'" % (ajid)
+        xtzt = db.getdata(sql, 0)[1]
+        logger.info("查询到的协同状态：%s" % xtzt)
+        self.assertEqual(104, xtzt)
+
+    def test_03_assert_result_zf(self):
+        """验证政法端协同状态是否变成104"""
+        # 连接数据库
+        db = DataBase('zf')
         savedata = SaveResultToFile()
         ajid = savedata.readfile('平台案件编号')  # 从文件中读取ajid
         sql = "SELECT n_tbxtzt  FROM db_yw.t_tb_ajxx WHERE c_id LIKE '%s'" % (ajid)

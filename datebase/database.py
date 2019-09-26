@@ -3,7 +3,8 @@ import logging
 
 from datebase.readconfig import ReadDbConfig
 from common.logger import Logger
-logger = Logger(logger ='database').getlog()
+
+logger = Logger(logger='database').getlog()
 logger.setLevel(level=logging.INFO)
 
 """
@@ -14,8 +15,8 @@ logger.setLevel(level=logging.INFO)
 class DataBase:
 
     # 数据库地址等信息参数传入
-    def __init__(self,dw):
-        confg=ReadDbConfig()
+    def __init__(self, dw):
+        confg = ReadDbConfig()
         self.host = confg.host(dw)
         self.datebasename = confg.databasename(dw)
         self.port = confg.port(dw)
@@ -24,14 +25,14 @@ class DataBase:
 
     # 链接数据库
     def connectdatabase(self):
-        logger.info("链接数据库%s"%self.host)
-        conn = psycopg2.connect(database=self.datebasename, user=self.user,password=self.password,
-                                host=self.host,port=self.port)
+        logger.info("链接数据库%s" % self.host)
+        conn = psycopg2.connect(database=self.datebasename, user=self.user, password=self.password,
+                                host=self.host, port=self.port)
         cur = conn.cursor()
-        return conn,cur
+        return conn, cur
 
     # 根据sql设置数据库中的字段的值
-    def exe_update(self,sql):
+    def exe_update(self, sql):
         conn = self.connectdatabase()[0]
         cur = conn.cursor()
         try:
@@ -46,16 +47,16 @@ class DataBase:
     # 关闭数据库
     def exe_close(self):
         try:
-            cur=self.connectdatabase()[0]
+            cur = self.connectdatabase()[0]
             cur.close()
             logger.info("关闭成功")
         except Exception as e:
             logger.info("关闭失败，异常信息：%s" % e)
 
     # 通过sql，查询数据库，输出数据,返回查询的结果有两个，0是查询的字段名称，1是查询的数据值
-    def getdata(self,sql,*number):
-        rows=[]
-        all_fields=[]
+    def getdata(self, sql, *number):
+        rows = []
+        all_fields = []
         curn = self.connectdatabase()[1]
         try:
             curn.execute(sql)
@@ -73,7 +74,7 @@ class DataBase:
             for item in temp:  # 转成一个列表
                 listdata.append(item)
 
-            listfield =[]
+            listfield = []
             for item in all_fields:
                 listfield.append(item[0])
 
@@ -81,18 +82,18 @@ class DataBase:
                 logger.warning("sql执行成功，但是未查到数据，结果集为空，请排查sql")
                 return listdata
             if len(listdata) > 0 and number != ():
-                n=number[0]
+                n = number[0]
                 logger.info("获取表头为:%s" % listfield[n])
-                logger.info("获取第{}个数据值为:{}" .format(n+1,listdata[n]))
-                return listfield[n],listdata[n]
+                logger.info("获取第{}个数据值为:{}".format(n + 1, listdata[n]))
+                return listfield[n], listdata[n]
             if number == ():  # 判断是否未传入参数
                 logger.info("返回所有字段%s" % (listfield))
                 logger.info("返回所有数据%s" % (listdata))
-                return listfield,listdata
+                return listfield, listdata
 
 
-if __name__ =='__main__':
-    r=DataBase('zf')
+if __name__ == '__main__':
+    r = DataBase('zf')
     r.connectdatabase()
     sql1 = "select * from db_yw.t_tb_ajxx ajxx where d_xgsj between (SELECT current_timestamp - interval '1 minute') " \
            "and current_timestamp"
@@ -102,4 +103,3 @@ if __name__ =='__main__':
     # r.exe_update(sql)
     # r.exe_close()
     #
-

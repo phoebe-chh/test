@@ -39,7 +39,7 @@ class TbTest(unittest.TestCase):
     def test_01_login(self):
         """登陆"""
         loginpage = LoginPageTest(self.driver)
-        loginpage.login()  # 使用登陆方法
+        loginpage.login('241808', '123')  # 使用登陆方法
         po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
         result = po.is_element_exist('//*[@id="identify"]', "xpath")  # 通过登陆后的单位判断是否登陆成功
         self.assertTrue(result)  # 断言登陆结果
@@ -60,8 +60,10 @@ class TbTest(unittest.TestCase):
         self.driver.switch_to.frame(iframe2)
         logger.info("开始选择案件和嫌疑人")
         cp = ChoosePeople(self.driver)  # 开始选择案件
-        result = cp.find_avaibale_tbaj()  # 调用查找嫌疑人的方法
-        self.assertTrue(result)  # 断言是否找到嫌疑人方法的返回结果
+        xyrxm = cp.find_avaibale_tbaj()  # 调用查找嫌疑人的方法
+        self.assertIsNotNone(xyrxm)  # 断言是否找到嫌疑人方法的返回结果
+        savedata = SaveResultToFile()
+        savedata.writefile('嫌疑人姓名', xyrxm)  # 保存嫌疑人姓名在文件中
 
     def test_04_fill_in_value(self):
         """进入提捕页面，填写字段信息"""
@@ -76,7 +78,7 @@ class TbTest(unittest.TestCase):
         tbaj.chooseqzcs_tb()  # 调用选择强制措施方法
         po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
         result = po.is_table_data_exist('suspectGrid-table', 4)  # 获取当前列表中该列的值
-        self.assertTrue(result)  # 断言强制措施中的内容是否有值
+        self.assertIsNotNone(result)  # 断言强制措施中的内容是否有值
 
     def test_05_jzxt_uploadfile(self):
         """进入卷宗系统，上传文书和卷宗"""
@@ -88,12 +90,12 @@ class TbTest(unittest.TestCase):
         # 断言卷宗是否上传成功
         self.driver.switch_to.default_content()
         resultoffile = po.is_element_exist('jqTreeAreaFiles_ztree_4_span', "id")
-        self.assertTrue(resultoffile)  # 断言上传结果
+        self.assertTrue(resultoffile)  # 断言文书上传结果
         zjxt.uploadjz(r"F:\2019-06\autotest\jz01.jpg")  # 上传卷宗方法
+        self.driver.switch_to.default_content()
         resultojz = po.is_element_exist('jqTreeAreaFiles_ztree_8_span', "id")
-        self.assertTrue(resultojz)
+        self.assertTrue(resultojz)  # 断言卷宗上传结果
         self.switch_window(0)  # 切回提捕页面
-        # 断言是否上传卷宗成功
 
     def test_06_get_ajid(self):
         """从页面url获取ajid，并保存到文件中"""
@@ -101,6 +103,8 @@ class TbTest(unittest.TestCase):
         self.assertIsNotNone(ajid)  # 断言是否获取到ajid
         sa = SaveResultToFile()
         sa.writefile('ajid', ajid)  # 获取页面ajid并写入文件
+        result = sa.readfile('ajid')
+        self.assertIsNotNone(result)  # 断言ajid是否存入成功
 
     def test_07_set_qzzt(self):
         """设置签章状态为1，通过ajid查询数据库，设置n_yqz=1"""
@@ -110,22 +114,27 @@ class TbTest(unittest.TestCase):
         # 链接数据库执行sql
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
         db.exe_update(sql)  # 执行sql
+        sele_sql = "SELECT n_yqz from db_jz.t_jzgl_wj  WHERE c_ywid='%s' and c_store_path is not null" % (ajid)
+        result = db.getdata(sele_sql, 0)[1]  # 判断是否查询到该ajid的签章状态
+        self.assertEqual(1, result)  # 断言是否执行sql成功
 
     def test_08_tb_gotibu(self):
         """点击提捕按钮，发起提捕,至此公安端页面操作结束"""
 
         tb = StartYw(self.driver)
         tb.start_tb()  # 发起提捕流程
-        po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
-        result = po.is_alert_present()  # 判断是否有弹框，如果没有则认为提捕成功
-        self.assertFalse(result)
+        logger.info(self.driver.title)
+        assert "提捕案件列表" in self.driver.title  # 如果提捕成功，页面跳转到提捕列表
 
     # 页面操作结束之后，保存数据库中字段内容到文件中，提供后续文件操作使用
     def test_09_tb_save_all_data(self):
         """保存所有数据到logs/record.txt中，至此公安端页面操作结束"""
         savedata = SaveResultToFile()
         ajid = savedata.readfile('ajid')
+        xyrxm = savedata.readfile('嫌疑人姓名')
+        self.assertIsNotNone(ajid)  # 断言是否读取到ajid
         savedata.clearfile()  # 清除之前的测试数据
+        savedata.writefile('嫌疑人姓名', xyrxm)
         db = DataBase("ga")  # 链接数据库，选择ga端，数据库信息在ini文件中读取
         sql_ajcm = "SELECT  ajxx.c_ajmc  FROM db_yw.t_tb_ajxx  ajxx WHERE c_id='%s'" % (ajid)  # 通过sql查询ajmc
         ajmc = db.getdata(sql_ajcm, 0)[1]  # 执行sql

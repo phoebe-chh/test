@@ -23,4 +23,12 @@ class TbYwListPage(ReadExcel):
     def ybajbutton(self):
         return self.get_element('ywlist_page_tb','element1')
 
+    # 查询嫌疑人姓名输入框
+    def xyrxminputtext(self):
+        return self.get_element('ywlist_page_tb','element4')
+
+    # 查询按钮
+    def searchbutton(self):
+        return self.get_element('ywlist_page_tb','element5')
+
 

@@ -54,10 +54,10 @@ class UploadFile(SeleniumDriver):
         self.click(jzxt.gawsbutton(), 'xpath')
         self.click(jzxt.uploadbutton(), 'id')
         self.switch_iframe(1)
-        self.double_click(jzxt.choosefileflashbutton(), 'xpath')
-        str = "F://2019-06//autotest//upload.exe" + " " + "chrome" + " " + filepath
-        logger.info(str)
-        os.popen(str)
+        self.double_click(jzxt.choosefileflashbutton(), 'id')
+        path = "F://2019-06//autotest//upload.exe" + " " + "chrome" + " " + filepath
+        logger.info(path)
+        os.popen(path)
         time.sleep(5)
         if type == True:  # 若需要在上传文件后选择文件类型，则传入的参数可默认不传，若不需要选择文书类型，则设置为False
             all_input = self.driver.find_elements_by_tag_name("input")
@@ -73,14 +73,15 @@ class UploadFile(SeleniumDriver):
         logger.info("开始上传卷宗")
         jzxt = JzxtPage()  # 引入卷宗系统页面
         self.get_page_title()  # 获取页面标题
-        self.double_click(jzxt.jzroot(), 'xpath')
-        self.double_click(jzxt.jzadd(), 'xpath')
-        self.double_click(jzxt.jzchild(), 'xpath')
+        self.click(jzxt.jzroot(), 'xpath')
+        self.click(jzxt.jzadd(), 'xpath')
+        self.click(jzxt.jzchild(), 'xpath')
         self.double_click(jzxt.uploadbutton(), 'id')
+        time.sleep(2)
         self.switch_iframe(1)
-        self.double_click(jzxt.choosefileflashbutton(), 'xpath')
-        str = "F://2019-06//autotest//upload.exe" + " " + "chrome" + " " + filepath
-        os.popen(str)
+        self.double_click(jzxt.choosefileflashbutton(), 'id')
+        path = "F://2019-06//autotest//upload.exe" + " " + "chrome" + " " + filepath
+        os.popen(path)
         time.sleep(5)
         self.double_click(jzxt.confire_jz(), 'xpath')
-        time.sleep(5)
+        time.sleep(8)

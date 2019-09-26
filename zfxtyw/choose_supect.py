@@ -23,6 +23,7 @@ class ChoosePeople(SeleniumDriver):
         """
         taq = TbTaq()  # 实例化提捕提案器页面
         nextpagetime = 0  # 记录当前翻页的次数
+        self.spsname = None
         flag = False  # 设置标签是否找到嫌疑人
         while nextpagetime <= 2 and flag == False:  # 最多翻页3次，如果翻页3次还找不到可以选择的案件，那么请排查数据
             ajtablelist = self.driver.find_element_by_id('caseGrid-table')
@@ -61,11 +62,7 @@ class ChoosePeople(SeleniumDriver):
             else:
                 logger.info("当前提案器中无案件，无法提案")
 
-            # 判断是否选择到嫌疑人
-            if self.spsname is not None:
-                return True
-            else:
-                return False
+        return self.spsname  # 返回嫌疑人名称
 
     # 选择在押人员
     def find_zyry(self):

@@ -32,7 +32,7 @@ HtmlFile = report_path + now + "report_example.html"
 fp = open(HtmlFile, "wb")
 
 # 构建suite
-suite = unittest.defaultTestLoader.discover(case_path,pattern="test_11*.py",top_level_dir=None)
+suite = unittest.defaultTestLoader.discover(case_path,pattern="test_2*.py",top_level_dir=None)
 
 
 if __name__ == '__main__':

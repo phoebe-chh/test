@@ -1,0 +1,66 @@
+2019-09-26 19:18:14,312 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-26 19:18:14,312 - browserdriver - INFO - 测试的URL: http://172.23.23.220:7082/zfxtbgxt/form/e18f1f3414dd6abfc74342002bffd9ea/insert
+2019-09-26 19:18:16,944 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-26 19:18:20,026 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-26 19:18:20,041 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:18:20,116 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 19:18:20,194 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-26 19:18:20,206 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:18:20,271 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 19:18:20,345 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-26 19:18:20,357 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:18:20,413 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 19:18:21,518 - element-exist - INFO - 找到该元素
+2019-09-26 19:18:21,530 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-26 19:18:21,530 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="57a130d942b7bb9b95a1e56dcda0a21f", element="0.8912737122108256-2")>]
+2019-09-26 19:18:21,620 - readconfig - INFO - 操作第6行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[3]/span[1]
+2019-09-26 19:18:21,633 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:18:22,218 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 19:18:22,228 - seleniumdriver - INFO - 当前页面标题为：移诉案件列表
+2019-09-26 19:18:22,233 - savadata - INFO - ['嫌疑人姓名', '凡谷绿']
+2019-09-26 19:18:22,233 - savadata - INFO - ['案件名称', '凡谷绿涉嫌故意杀人案']
+2019-09-26 19:18:22,233 - savadata - INFO - ['平台案件编号', '1467DE797020516E1FC55DBF137242A1']
+2019-09-26 19:18:22,233 - savadata - INFO - ['平台案件关联编号', '11da04261d274c45bc185d04c793e3ef']
+2019-09-26 19:18:22,233 - savadata - INFO - ['接收单位编号', '3320584']
+2019-09-26 19:18:22,234 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-26 19:18:22,311 - readconfig - INFO - 操作第17行元素,当前测试对象元素路径：jqInputXyrxm
+2019-09-26 19:18:22,324 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:18:22,462 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 19:18:22,547 - readconfig - INFO - 操作第18行元素,当前测试对象元素路径：jqButtonCx
+2019-09-26 19:18:22,558 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:18:22,599 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 19:18:27,647 - element-exist - INFO - 当前列表中的数据内容为凡谷绿
+2019-09-26 19:18:27,680 - element-exist - INFO - 当前列表中的数据内容为
+2019-09-26 19:18:57,633 - browserdriver - INFO - 当前选择的浏览器为 Chrome 
+2019-09-26 19:18:57,633 - browserdriver - INFO - 测试的URL: http://172.23.23.220:7082/zfxtbgxt/form/e18f1f3414dd6abfc74342002bffd9ea/insert
+2019-09-26 19:19:00,146 - browserdriver - INFO - 启动Chrome浏览器
+2019-09-26 19:19:02,157 - readconfig - INFO - 操作第2行元素,当前测试对象元素路径：username1
+2019-09-26 19:19:02,171 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:19:02,238 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 19:19:02,317 - readconfig - INFO - 操作第3行元素,当前测试对象元素路径：password1
+2019-09-26 19:19:02,330 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:19:02,392 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 19:19:02,468 - readconfig - INFO - 操作第4行元素,当前测试对象元素路径：submit_btn
+2019-09-26 19:19:02,480 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:19:02,535 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 19:19:03,434 - element-exist - INFO - 找到该元素
+2019-09-26 19:19:03,446 - seleniumdriver - INFO - 当前页面的ifram个数为1
+2019-09-26 19:19:03,446 - seleniumdriver - INFO - 当前页面iframe有[<selenium.webdriver.remote.webelement.WebElement (session="95716a50908286618a608a217850fc8b", element="0.12292496775218797-2")>]
+2019-09-26 19:19:03,541 - readconfig - INFO - 操作第6行元素,当前测试对象元素路径：/html/body/div/div/div[2]/div[3]/span[1]
+2019-09-26 19:19:03,553 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:19:05,636 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 19:19:05,642 - seleniumdriver - INFO - 当前页面标题为：移诉案件列表
+2019-09-26 19:19:05,649 - savadata - INFO - ['嫌疑人姓名', '凡谷绿']
+2019-09-26 19:19:05,649 - savadata - INFO - ['案件名称', '凡谷绿涉嫌故意杀人案']
+2019-09-26 19:19:05,650 - savadata - INFO - ['平台案件编号', '1467DE797020516E1FC55DBF137242A1']
+2019-09-26 19:19:05,650 - savadata - INFO - ['平台案件关联编号', '11da04261d274c45bc185d04c793e3ef']
+2019-09-26 19:19:05,650 - savadata - INFO - ['接收单位编号', '3320584']
+2019-09-26 19:19:05,650 - savadata - INFO - ['发送单位编号', '2320584']
+2019-09-26 19:19:05,724 - readconfig - INFO - 操作第17行元素,当前测试对象元素路径：jqInputXyrxm
+2019-09-26 19:19:05,740 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:19:05,880 - seleniumdriver - INFO - 数据写入成功
+2019-09-26 19:19:05,966 - readconfig - INFO - 操作第18行元素,当前测试对象元素路径：jqButtonCx
+2019-09-26 19:19:05,976 - seleniumdriver - INFO - 找到该元素
+2019-09-26 19:19:06,020 - seleniumdriver - INFO - 元素点击成功
+2019-09-26 19:19:11,065 - element-exist - INFO - 当前列表中的数据内容为凡谷绿
+2019-09-26 19:19:11,099 - element-exist - INFO - 当前列表中的数据内容为待受理

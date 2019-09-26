@@ -44,10 +44,7 @@ class ElemnetExist(SeleniumDriver):
         cell = rows[1].find_elements_by_tag_name('td')
         data = cell[lownumber].text
         logger.info("当前列表中的数据内容为{}".format(data))
-        if data is not None:
-            return True
-        else:
-            return False
+        return data
 
     # 判断卷宗页面的文件是否存在,参数为当前父节点的id和当前定位的元素位置
     def is_file_exist(self, ulid, number):

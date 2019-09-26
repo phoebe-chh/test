@@ -16,8 +16,8 @@ class LoginPageTest(SeleniumDriver):
         super().__init__(driver)
         self.driver = driver
 
-    def login(self):
+    def login(self, username, password):
         loginpage = LoginPage()  # 实例化页面，获取元素，对元素进行操作
-        self.text_input('241808', loginpage.username_textbox())  # 输入用户名
-        self.text_input('123', loginpage.password_textbox())  # 输入密码
+        self.text_input(username, loginpage.username_textbox())  # 输入用户名
+        self.text_input(password, loginpage.password_textbox())  # 输入密码
         self.click(loginpage.login_button(), 'class')  # 点击登录按钮

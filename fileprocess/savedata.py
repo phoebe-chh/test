@@ -47,7 +47,10 @@ class SaveResultToFile:
                     if lines[0] == name:
                         data.append(lines[1])
         # logger.info(data)
-        return data[-1]  # 返回最后的name数据
+        if len(data) > 0:
+            return data[-1]  # 返回最后的name数据
+        else:
+            logger.info("未查询到数据")
 
     # # 保存结果集
     # def savedata_to_record_file(self):

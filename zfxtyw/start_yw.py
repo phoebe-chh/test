@@ -24,7 +24,7 @@ class StartYw(SeleniumDriver):
     def start_tb(self):
         tb = TbAjxxPage()
         self.double_click(tb.subbitbutton(), 'xpath')
-        time.sleep(5)
+        time.sleep(15)
 
     # 发起移诉流程
     def start_ys(self):

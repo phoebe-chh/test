@@ -1,14 +1,12 @@
 import time
 import unittest
-
-import jpype
-
 from fileprocess.encryption import Encryption
 from fileprocess.putonserver import PutOnService
 from fileprocess.replacefilecontent import ReplaceFileContent
 from fileprocess.zipallfile import ZipAllFile
 import logging
 from common.logger import Logger
+
 logger = Logger(logger='fileprocess-104').getlog()
 logger.setLevel(level=logging.INFO)
 
