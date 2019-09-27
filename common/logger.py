@@ -1,6 +1,8 @@
 import logging
 import time
 import os
+
+
 class Logger(object):
     def __init__(self, logger):
         '指定保存日志的文件路径，日志级别，以及调用文件,将日志存入到指定的文件中'
@@ -9,9 +11,9 @@ class Logger(object):
         # 创建一个handler，用于写入日志文件
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
         # log_dir = os.path.abspath('.')+'../logs/'
-        log_dir = os.path.abspath('..')+ '/logs/'
+        log_dir = os.path.abspath('..') + '/logs/'
         # log_name = rq + '.log'
-        log_name =log_dir+ rq +'.log'
+        log_name = log_dir + rq + '.log'
         fh = logging.FileHandler(log_name)
         fh.setLevel(logging.DEBUG)
         # 再创建一个handler，用于输出到控制台
@@ -33,7 +35,7 @@ class Logger(object):
 
 if __name__ == "__main__":
     logger = Logger(logger='callinterfacetest').getlog()
-    logger.setLevel(level = logging.INFO)
+    logger.setLevel(level=logging.INFO)
     logger.debug("this is  debug")
     logger.info("this is info")
     logger.error("error")

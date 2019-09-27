@@ -5,6 +5,7 @@ from common.logger import Logger
 from pages.ajxx_tb_page import TbAjxxPage
 from pages.ajxx_whsy_page import WshyAjxxPage
 from pages.ajxx_ycjy_page import YcjyAjxxPage
+
 logger = Logger(logger='fillvalueoftb').getlog()
 logger.setLevel(level=logging.INFO)
 

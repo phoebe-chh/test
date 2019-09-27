@@ -11,7 +11,7 @@ class TbYwListPage(ReadExcel):
         通过pagename和elementname获取配置文件中的信息
     """
 
-    # 提捕列表
+    # 提捕列表第一条案件
     def tblist(self):
         return self.get_element('ywlist_page_tb','element2')
 

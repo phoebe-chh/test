@@ -6,16 +6,19 @@ import time
 import os
 import logging
 from common.logger import Logger
+
 logger = Logger(logger='sendreportbyemail').getlog()
-logger.setLevel(level = logging.INFO)
-class  SendReportByEmail():
+logger.setLevel(level=logging.INFO)
+
+
+class SendReportByEmail():
     def __init__(self):
         pass
+
     def find_report_name(self):
         """查找最后生成的报告文件的路径"""
-        #按时间排序
-        # os.chdir("/test_reports")
-        result_dir = os.path.abspath('..')+"\\test_reports"
+        # 按时间排序
+        result_dir = os.path.abspath('..') + "\\test_reports"
         # os.chdir(result_dir)
         lists = os.listdir(result_dir)
         lists.sort(key=lambda fn: os.path.getctime(result_dir + "\\" + fn))
@@ -23,8 +26,8 @@ class  SendReportByEmail():
         logger.info(file_name)
         return file_name
 
-
-    def send_email(self,report_file):
+    # 发送email方法
+    def send_email(self, report_file):
         """发送邮件方法"""
         try:
             # 配置邮件信息
@@ -34,8 +37,8 @@ class  SendReportByEmail():
             smtp_server = "smtp.thunisoft.com"
             port = "465"
             # 发送邮箱账号和密码（授权码）server_hostname
-            username ="chenhui-1@thunisoft.com"
-            password ="6789@jkl"
+            username = "chenhui-1@thunisoft.com"
+            password = "6789@jkl"
             # os.chdir(r"D:\PycharmProjects\autotest\test_reports")
 
             # 读取测试报告文件
@@ -57,7 +60,7 @@ class  SendReportByEmail():
 
             # 连接邮箱服务器
             smtp = smtplib.SMTP_SSL(host=smtp_server)
-            smtp.connect(host=smtp_server,port=465)
+            smtp.connect(host=smtp_server, port=465)
             # 登录邮箱
             smtp.login(username, password)
             # 发送邮件
@@ -68,11 +71,10 @@ class  SendReportByEmail():
         except Exception as e:
             logger.info(e)
 
-
     def send_report(self):
         """发送测试报告"""
         # self.send_email(self.find_report_name())
-        filename=self.find_report_name()
+        filename = self.find_report_name()
         logger.info(filename)
         self.send_email(filename)
 

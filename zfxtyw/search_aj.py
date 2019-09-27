@@ -28,6 +28,12 @@ class SearchAJ(SeleniumDriver):
         self.click(tb.searchbutton(), 'id')
         time.sleep(5)
 
+    # 提捕列表中双击案件名称进入案件信息
+    def enter_tbajxx(self):
+        tb = TbYwListPage()  # 实例化页面，获取元素，对元素进行操作
+        self.double_click(tb.tblist(), 'xpath')
+        time.sleep(2)
+
     # 移诉列表中查询案件
     def search_ysxyrxm(self, xyrxm):
         tb = YsYwListPage()  # 实例化页面，获取元素，对元素进行操作

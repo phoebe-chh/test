@@ -39,6 +39,7 @@ class StartYw(SeleniumDriver):
     # 延长羁押发起
     def start_ycjy(self):
         ycjy = YcjyAjxxPage()
+        # self.excute_js("arguments[0].scrollIntoView();", ycjy.sendbutton(), 'class')
         self.click(ycjy.sendbutton(), 'class')  # 点击送达看守所按钮
 
     # 保存延长羁押数据

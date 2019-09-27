@@ -2,6 +2,7 @@ import time
 import unittest
 from base.browser_driver import BrowserDriver
 from common.elementexist import ElemnetExist
+from common.pageoperation import PageOperation
 from datebase.database import DataBase
 from datebase.updateqzzt import UpdateQzzt
 from fileprocess.savedata import SaveResultToFile
@@ -17,6 +18,7 @@ from zfxtyw.getajid import GetAjidFromUrl
 from zfxtyw.jzxt_uploadfile import UploadFile
 from zfxtyw.login import LoginPageTest
 from zfxtyw.start_yw import StartYw
+
 logger = Logger(logger='tb-qlc').getlog()
 logger.setLevel(level=logging.INFO)
 
@@ -31,9 +33,10 @@ class TbTest(unittest.TestCase):
         browser = BrowserDriver(cls)
         cls.driver = browser.open_browser(browser, 'ga')  # 选择公安或者政法端进行登录,浏览器的选择在ini文件中进行配置
 
-    def switch_window(self, number):
-        all_windows = self.driver.window_handles
-        self.driver.switch_to.window(all_windows[number])
+    #
+    # def switch_window(self, number):
+    #     all_windows = self.driver.window_handles
+    #     self.driver.switch_to.window(all_windows[number])
 
     def test_01_login(self):
         """登陆"""
@@ -83,7 +86,8 @@ class TbTest(unittest.TestCase):
         """进入卷宗系统，上传文书和卷宗"""
         zjxt = UploadFile(self.driver)
         zjxt.enterjzxt_tb()  # 进入文件管理页面
-        self.switch_window(1)  # 需要切换窗口
+        page = PageOperation(self.driver)
+        page.switch_window(1)  # 需要切换窗口
         zjxt.uploadfile(r"F:\2019-06\autotest\起诉意见书.pdf")  # 上传文书，传入文书路径
         po = ElemnetExist(self.driver)  # 实例化页面通用方法，判断登陆后的页面是否有某个元素
         # 断言卷宗是否上传成功
@@ -94,7 +98,7 @@ class TbTest(unittest.TestCase):
         self.driver.switch_to.default_content()
         resultojz = po.is_element_exist('jqTreeAreaFiles_ztree_8_span', "id")
         self.assertTrue(resultojz)  # 断言卷宗上传结果
-        self.switch_window(0)  # 切回提捕页面
+        page.switch_window(0)  # 切回提捕页面
 
     def test_06_get_ajid(self):
         """从页面url获取ajid，并保存到文件中"""
@@ -166,10 +170,10 @@ if __name__ == '__main__':
     testunit.addTest(TbTest('test_03_tb_addtbaj'))
     testunit.addTest(TbTest('test_04_fill_in_value'))
     testunit.addTest(TbTest('test_05_tb_chooseqzcs'))
-    # testunit.addTest(TbTest('test_05_jzxt_uploadfile'))
-    # # # testunit.addTest(TbTest('test_07_set_qzzt'))
+    testunit.addTest(TbTest('test_05_jzxt_uploadfile'))
+    # # testunit.addTest(TbTest('test_07_set_qzzt'))
     # # # testunit.addTest(TbTest('test_09_tb_save_all_data'))
-    testunit.addTest(TbTest('test_08_tb_gotibu'))
+    # testunit.addTest(TbTest('test_08_tb_gotibu'))
     # # # # test_09_tb_save_all_data
     # # # # testunit.addTest(TbTest('test_07_set_qzzt'))
     # # # # # # test_05_jzxt_uploadfile
